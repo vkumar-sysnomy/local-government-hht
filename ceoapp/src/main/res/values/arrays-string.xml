@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <!--<string-array name="country_codes">
+        <item>ALA Aland Islands</item>
+        <item>ALB Albania</item>
+        <item>DZA Algeria</item>
+        <item>ASM American Samoa</item>
+        <item>AND Andorra</item>
+        <item>AGO Angola</item>
+        <item>AIA Anguilla</item>
+        <item>ATA Antarctica</item>
+        <item>ATG Antigua and Barbuda</item>
+        <item>ARG Argentina</item>
+        <item>ARM Armenia</item>
+        <item>ABW Aruba</item>
+        <item>AUS Australia</item>
+        <item>AUT Austria</item>
+        <item>AZE Azerbaijan</item>
+        <item>BHS Bahamas</item>
+        <item>BHR Bahrain</item>
+        <item>BGD Bangladesh</item>
+        <item>BRB Barbados</item>
+        <item>BLR Belarus</item>
+        <item>BEL Belgium</item>
+        <item>BLZ Belize</item>
+        <item>BEN Benin</item>
+        <item>BMU Bermuda</item>
+        <item>BTN Bhutan</item>
+        <item>BOL Bolivia, Plurinational State of</item>
+        <item>BES Bonaire, Sint Eustatius and Saba</item>
+        <item>BIH Bosnia and Herzegovina</item>
+        <item>BWA Botswana</item>
+        <item>BVT Bouvet Island</item>
+        <item>BRA Brazil</item>
+        <item>IOT British Indian Ocean Territory</item>
+        <item>BRN Brunei Darussalam</item>
+        <item>BGR Bulgaria</item>
+        <item>BFA Burkina Faso</item>
+        <item>BDI Burundi</item>
+        <item>KHM Cambodia</item>
+        <item>CMR Cameroon</item>
+        <item>CAN Canada</item>
+        <item>CPV Cabo Verde</item>
+        <item>CYM Cayman Islands</item>
+        <item>CAF Central African Republic</item>
+        <item>TCD Chad</item>
+        <item>CHL Chile</item>
+        <item>CHN China</item>
+        <item>CXR Christmas Island</item>
+        <item>CCK Cocos (Keeling) Islands</item>
+        <item>COL Colombia</item>
+        <item>COM Comoros</item>
+        <item>COG Congo</item>
+        <item>COD Congo, the Democratic Republic of the</item>
+        <item>COK Cook Islands</item>
+        <item>CRI Costa Rica</item>
+        <item>CIV Cote d\'Ivoire </item>
+        <item>HRV Croatia</item>
+        <item>CUB Cuba</item>
+        <item>CUW Curacao !Curaçao</item>
+        <item>CYP Cyprus</item>
+        <item>CZE Czech Republic</item>
+        <item>DNK Denmark</item>
+        <item>DJI Djibouti</item>
+        <item>DMA Dominica</item>
+        <item>DOM Dominican Republic</item>
+        <item>ECU Ecuador</item>
+        <item>EGY Egypt</item>
+        <item>SLV El Salvador</item>
+        <item>GNQ Equatorial Guinea</item>
+        <item>ERI Eritrea</item>
+        <item>EST Estonia</item>
+        <item>ETH Ethiopia</item>
+        <item>FLK Falkland Islands (Malvinas)</item>
+        <item>FRO Faroe Islands</item>
+        <item>FJI Fiji</item>
+        <item>FIN Finland</item>
+        <item>FRA France</item>
+        <item>GUF French Guiana</item>
+        <item>PYF French Polynesia</item>
+        <item>ATF French Southern Territories</item>
+        <item>GAB Gabon</item>
+        <item>GMB Gambia</item>
+        <item>GEO Georgia</item>
+        <item>DEU Germany</item>
+        <item>GHA Ghana</item>
+        <item>GIB Gibraltar</item>
+        <item>GRC Greece</item>
+        <item>GRL Greenland</item>
+        <item>GRD Grenada</item>
+        <item>GLP Guadeloupe</item>
+        <item>GUM Guam</item>
+        <item>GTM Guatemala</item>
+        <item>GGY Guernsey</item>
+        <item>GIN Guinea</item>
+        <item>GNB Guinea-Bissau</item>
+        <item>GUY Guyana</item>
+        <item>HTI Haiti</item>
+        <item>HMD Heard Island and McDonald Islands</item>
+        <item>VAT Holy See (Vatican City State)</item>
+        <item>HND Honduras</item>
+        <item>HKG Hong Kong</item>
+        <item>HUN Hungary</item>
+        <item>ISL Iceland</item>
+        <item>IND India</item>
+        <item>IDN Indonesia</item>
+        <item>IRN Iran, Islamic Republic of</item>
+        <item>IRQ Iraq</item>
+        <item>IRL Ireland</item>
+        <item>IMN Isle of Man</item>
+        <item>ISR Israel</item>
+        <item>ITA Italy</item>
+        <item>JAM Jamaica</item>
+        <item>JPN Japan</item>
+        <item>JEY Jersey</item>
+        <item>JOR Jordan</item>
+        <item>KAZ Kazakhstan</item>
+        <item>KEN Kenya</item>
+        <item>KIR Kiribati</item>
+        <item>PRK Korea, Democratic People\'s Republic of</item>
+        <item>KOR Korea, Republic of</item>
+        <item>KWT Kuwait</item>
+        <item>KGZ Kyrgyzstan</item>
+        <item>LAO Lao People\'s Democratic Republic</item>
+        <item>LVA Latvia</item>
+        <item>LBN Lebanon</item>
+        <item>LSO Lesotho</item>
+        <item>LBR Liberia</item>
+        <item>LBY Libya</item>
+        <item>LIE Liechtenstein</item>
+        <item>LTU Lithuania</item>
+        <item>LUX Luxembourg</item>
+        <item>MAC Macao</item>
+        <item>MKD Macedonia, the former Yugoslav Republic of</item>
+        <item>MDG Madagascar</item>
+        <item>MWI Malawi</item>
+        <item>MYS Malaysia</item>
+        <item>MDV Maldives</item>
+        <item>MLI Mali</item>
+        <item>MLT Malta</item>
+        <item>MHL Marshall Islands</item>
+        <item>MTQ Martinique</item>
+        <item>MRT Mauritania</item>
+        <item>MUS Mauritius</item>
+        <item>MYT Mayotte</item>
+        <item>MEX Mexico</item>
+        <item>FSM Micronesia, Federated States of</item>
+        <item>MDA Moldova, Republic of</item>
+        <item>MCO Monaco</item>
+        <item>MNG Mongolia</item>
+        <item>MNE Montenegro</item>
+        <item>MSR Montserrat</item>
+        <item>MAR Morocco</item>
+        <item>MOZ Mozambique</item>
+        <item>MMR Myanmar</item>
+        <item>NAM Namibia</item>
+        <item>NRU Nauru</item>
+        <item>NPL Nepal</item>
+        <item>NLD Netherlands</item>
+        <item>NCL New Caledonia</item>
+        <item>NZL New Zealand</item>
+        <item>NIC Nicaragua</item>
+        <item>NER Niger</item>
+        <item>NGA Nigeria</item>
+        <item>NIU Niue</item>
+        <item>NFK Norfolk Island</item>
+        <item>MNP Northern Mariana Islands</item>
+        <item>NOR Norway</item>
+        <item>OMN Oman</item>
+        <item>PAK Pakistan</item>
+        <item>PLW Palau</item>
+        <item>PSE Palestine, State of</item>
+        <item>PAN Panama</item>
+        <item>PNG Papua New Guinea</item>
+        <item>PRY Paraguay</item>
+        <item>PER Peru</item>
+        <item>PHL Philippines</item>
+        <item>PCN Pitcairn</item>
+        <item>POL Poland</item>
+        <item>PRT Portugal</item>
+        <item>PRI Puerto Rico</item>
+        <item>QAT Qatar</item>
+        <item>REU Reunion !Réunion</item>
+        <item>ROU Romania</item>
+        <item>RUS Russian Federation</item>
+        <item>RWA Rwanda</item>
+        <item>BLM Saint Barthelemy </item>
+        <item>SHN Saint Helena, Ascension and Tristan da Cunha</item>
+        <item>KNA Saint Kitts and Nevis</item>
+        <item>LCA Saint Lucia</item>
+        <item>MAF Saint Martin (French part)</item>
+        <item>SPM Saint Pierre and Miquelon</item>
+        <item>VCT Saint Vincent and the Grenadines</item>
+        <item>WSM Samoa</item>
+        <item>SMR San Marino</item>
+        <item>STP Sao Tome and Principe</item>
+        <item>SAU Saudi Arabia</item>
+        <item>SEN Senegal</item>
+        <item>SRB Serbia</item>
+        <item>SYC Seychelles</item>
+        <item>SLE Sierra Leone</item>
+        <item>SGP Singapore</item>
+        <item>SXM Sint Maarten (Dutch part)</item>
+        <item>SVK Slovakia</item>
+        <item>SVN Slovenia</item>
+        <item>SLB Solomon Islands</item>
+        <item>SOM Somalia</item>
+        <item>ZAF South Africa</item>
+        <item>SGS South Georgia and the South Sandwich Islands</item>
+        <item>SSD South Sudan</item>
+        <item>ESP Spain</item>
+        <item>LKA Sri Lanka</item>
+        <item>SDN Sudan</item>
+        <item>SUR Suriname</item>
+        <item>SJM Svalbard and Jan Mayen</item>
+        <item>SWZ Swaziland</item>
+        <item>SWE Sweden</item>
+        <item>CHE Switzerland</item>
+        <item>SYR Syrian Arab Republic</item>
+        <item>TWN Taiwan, Province of China</item>
+        <item>TJK Tajikistan</item>
+        <item>TZA Tanzania, United Republic of</item>
+        <item>THA Thailand</item>
+        <item>TLS Timor-Leste</item>
+        <item>TGO Togo</item>
+        <item>TKL Tokelau</item>
+        <item>TON Tonga</item>
+        <item>TTO Trinidad and Tobago</item>
+        <item>TUN Tunisia</item>
+        <item>TUR Turkey</item>
+        <item>TKM Turkmenistan</item>
+        <item>TCA Turks and Caicos Islands</item>
+        <item>TUV Tuvalu</item>
+        <item>UGA Uganda</item>
+        <item>UKR Ukraine</item>
+        <item>ARE United Arab Emirates</item>
+        <item>GBR United Kingdom</item>
+        <item>USA United States</item>
+        <item>UMI United States Minor Outlying Islands</item>
+        <item>URY Uruguay</item>
+        <item>UZB Uzbekistan</item>
+        <item>VUT Vanuatu</item>
+        <item>VEN Venezuela, Bolivarian Republic of</item>
+        <item>VNM Viet Nam</item>
+        <item>VGB Virgin Islands, British</item>
+        <item>VIR Virgin Islands, U.S.</item>
+        <item>WLF Wallis and Futuna</item>
+        <item>ESH Western Sahara</item>
+        <item>YEM Yemen</item>
+        <item>ZMB Zambia</item>
+        <item>ZWE Zimbabwe</item>
+    </string-array>-->
+     <string-array name="short_codes" >
+        <item>949 - All Windows Checked</item>
+        <item>950 - Broken Down</item>
+        <item>951 - Disabled Badge</item>
+        <item>952 - Disabled Clock</item>
+        <item>953 - DKM Double Kerb Mark</item>
+        <item>954 - Driver Not Seen</item>
+        <item>955 - Double Yellow Line</item>
+        <item>956 - East</item>
+        <item>957 - Footway</item>
+        <item>948 - Front Nearside</item>
+        <item>913 - Front Offside</item>
+        <item>919 - Fixed To Vehicle</item>
+        <item>901 - HTD Given or Handed to Driver</item>
+        <item>914 - Heavy Goods Vehicle</item>
+        <item>916 - Junction With</item>
+        <item>921 - Motor cycle</item>
+        <item>917 - North</item>
+        <item>905 - Nearside</item>
+        <item>911 - Opposite</item>
+        <item>912 - Outside</item>
+        <item>945 - Offside</item>
+        <item>997 - Pay and Display</item>
+        <item>915 - Parked and Unattended</item>
+        <item>900 - Public Carriage Vehicle</item>
+        <item>902 - Rear Nearside</item>
+        <item>903 - Rear Offside</item>
+        <item>904 - South</item>
+        <item>906 - Single Kerb Mark</item>
+        <item>907 - Single Yellow Line</item>
+        <item>908 - Time Plate</item>
+        <item>946 - Vehicle Excise Licence</item>
+        <item>922 - Valve Positions</item>
+        <item>920 - Vehicle Registration Mark    </item>
+        <item>999 - West</item>
+    </string-array>
+    <!--<string-array name="action_to_take" >
+        <item>No action</item>
+        <item>Remove</item>
+        <item>Abandoned</item>
+        <item>Untaxed</item>
+    </string-array>
+    <string-array name="action_priority" >
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>-->
+    <!--<string-array name="contra_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>-->
+</resources>

@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="150dp"
+    tools:context="com.farthestgate.android.ui.dialogs.MultiLogDialog"
+    android:gravity="center">
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/rgLocation"
+        android:weightSum="1">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="Same Location"
+            android:id="@+id/radSame"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.5"
+            android:layout_margin="2dp"/>
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:text="New Location"
+            android:id="@+id/radNew"
+            android:layout_weight="0.5"
+            android:layout_margin="2dp"/>
+    </RadioGroup>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Pay &amp; Display Ticket "
+        android:id="@+id/chkPD"
+        android:layout_gravity="center_horizontal"
+        android:enabled="true"
+        android:visibility="invisible"
+        android:layout_margin="10dp"/>
+</LinearLayout>

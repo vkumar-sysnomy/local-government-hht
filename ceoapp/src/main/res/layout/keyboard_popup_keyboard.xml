@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background= "#EDEDED" 
+        >
+
+
+    <com.farthestgate.android.ui.keyboard.CustomKeyboardView
+        android:id="@+id/keyboardView"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#EDEDED"
+        android:keyTextColor="#FFFFFF"
+        android:alpha="180.0"
+        android:popupLayout="@layout/keyboard_popup_keyboard"
+        android:keyPreviewLayout="@layout/pop_layout"
+        android:keyBackground="@drawable/key"
+        android:layout_height="wrap_content"
+        />
+ 
+    <ImageButton android:id="@+id/closeButton"
+        android:background= "@android:color/transparent" 
+        android:src= "@drawable/confirm_cross_box"  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+         android:layout_marginRight = "10dp"
+        android:clickable="true"
+        />
+</LinearLayout>

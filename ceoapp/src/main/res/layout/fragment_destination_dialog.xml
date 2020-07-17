@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_horizontal|top">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5">
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rgDest">
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Handed to Driver"
+                        android:id="@+id/radioHD"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="VDA"
+                        android:id="@+id/radioVDA"
+                        android:layout_gravity="center_horizontal"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Affixed to Windshield"
+                        android:id="@+id/radioAffix"
+                        android:layout_gravity="center_horizontal"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prevented from Issue"
+                        android:id="@+id/radioPFI"
+                        android:layout_gravity="center_horizontal"/>
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Void"
+                        android:id="@+id/radioVoid"
+                        android:visibility="invisible"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"/>
+                </RadioGroup>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical">
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All Windows Checked"
+                    android:id="@+id/checkWindows"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Driver Seen"
+                    android:id="@+id/checkDriver"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkVerbal"
+                    android:text="Verbal Abuse"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Physical Abuse"
+                    android:id="@+id/checkPhysical"/>
+            </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_weight="0.5">
+        <Spinner
+            android:id="@+id/spnActionToTake"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/roles_login"/>
+        <Spinner
+            android:id="@+id/spnActionPriority"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/roles_login"/>
+    </LinearLayout>
+</LinearLayout>

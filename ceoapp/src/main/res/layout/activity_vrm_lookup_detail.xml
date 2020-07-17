@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin_lookup"
+    android:paddingRight="@dimen/activity_horizontal_margin_lookup"
+    android:paddingTop="@dimen/activity_vertical_margin_lookup"
+    android:paddingBottom="@dimen/activity_vertical_margin_lookup">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/btnStartPCN"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:id="@+id/txtLookupDetails"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+    <Button
+        android:id="@+id/btnStartPCN"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/start_pcn_selector"
+        android:layout_above="@+id/btnGoBack"/>
+    <Button
+        android:id="@+id/btnGoBack"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/back_selector"/>
+</RelativeLayout>

@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app_name">Liberator</string>
+    <string name="action_settings">Settings</string>
+    <string name="printer_device_name">DPU-S445</string>
+    <string name="printer_device_model">281</string>
+    <string name="action_db_extract">DB Extract</string>
+
+    <!-- Activity Names -->
+    <string name="feature_name_login">Login</string>
+
+    <!-- Login -->
+    <string name="login_config_intro">Please check that the date and time are correct. Click on the date or time to reset.</string>
+    <string name="login_office_depot_prompt">Select depot</string>
+    <string name="login_confirm">Confirm</string>
+    <string name="login_hint_ceo_id">Enter ID Here</string>
+    <string name="login_hint_ceo_password">Enter password</string>
+
+    <!-- From AOSP -->
+
+
+    <!-- Label for button to confirm chosen date or time [CHAR LIMIT=30] -->
+    <string name="done_label">Done</string>
+    <!-- Content description for the hour selector in the time picker, which displays selectable hours of the day along the inside edge of a circle, as in an analog clock. [CHAR LIMIT=50] -->
+    <string name="hour_picker_description">Hours circular slider</string>
+    <!-- Content description for the minute selector in the time picker, which displays selectable five-minute intervals along the inside edge of a circle, as in an analog clock. [CHAR LIMIT=50] -->
+    <string name="minute_picker_description">Minutes circular slider</string>
+    <!-- Accessibility announcement for hour circular picker [CHAR LIMIT=NONE] -->
+    <string name="select_hours">Select hours</string>
+    <!-- Accessibility announcement for minute circular picker [CHAR LIMIT=NONE] -->
+    <string name="select_minutes">Select minutes</string>
+    <!-- Content description for the month and day selector in the date picker, which displays a selectable grid of days laid out by month. [CHAR LIMIT=50] -->
+    <string name="day_picker_description">Month grid of days</string>
+    <!-- Content description for the year selector in the date picker, which displays a scrolling, vertical list of years. [CHAR LIMIT=50] -->
+    <string name="year_picker_description">Year list</string>
+    <!-- Accessibility announcement for the day picker [CHAR LIMIT=NONE] -->
+    <string name="select_day">Select month and day</string>
+    <!-- Accessibility announcement for the year picker [CHAR LIMIT=NONE] -->
+    <string name="select_year">Select year</string>
+    <!-- Accessibility description for the item that is currently selected. -->
+    <string name="item_is_selected">%1$s selected</string>
+    <!-- Accessibility announcement when a number that had been typed in is deleted [CHAR_LIMIT=NONE] -->
+    <string name="deleted_key">%1$s deleted</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="time_placeholder">--</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="time_separator">:</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="radial_numbers_typeface">sans-serif</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="sans_serif">sans-serif</string>
+    <!-- DO NOT TRANSLATE -->
+    <string name="day_of_week_label_typeface">sans-serif</string>
+    <!-- Repeat an monthly event on the same day of every month [CHAR LIMIT=20] -->
+    <string name="recurrence_month_pattern_by_day">on the same day each month</string>
+    <!-- Description of the selected marker for accessibility support [CHAR LIMIT = NONE] -->
+    <string name="acessibility_recurrence_choose_end_date_description">change end date</string>
+    <!-- The button label for saving an event -->
+    <string name="save_label">Done</string>
+    <!-- Specifies that a repeating event to repeat forever (based on the defined frequency) instead of ending at a future date[CHAR LIMIT=20] -->
+    <string name="recurrence_end_continously">Forever</string>
+
+    <string-array name="other_info_items">
+        <item>Diplomatic Vehicle</item>
+        <item>Broken Down</item>
+        <item>Foreign Registration</item>
+        <item>Loading Evidence</item>
+    </string-array>
+
+    <!-- <string-array name="waiting_time_items">
+        <item>5 mins</item>
+        <item>20 mins</item>
+        <item>40 mins</item>
+    </string-array> -->
+
+    <!-- Vehicle Check -->
+    <!--<string-array nacontraventionSuffixesixes">
+        <item>A temporary traffic order </item>
+        <item>B Business bay </item>
+        <item>C Buses Only bay </item>
+        <item>D Doctors bay </item>
+        <item>E Double parked /obstruction </item>
+        <item>F Free parking bay </item>
+        <item>G Motorcycle bay </item>
+        <item>H Hospital bay </item>
+        <item>I Wrong type of voucher </item>
+        <item>K Ambulance Bay </item>
+        <item>L Loading Place </item>
+        <item>M Parking meter </item>
+        <item>O Blue badge holder </item>
+        <item>P Pay and display </item>
+        <item>Q Market traders bay </item>
+        <item>R Residents bay </item>
+        <item>S Shared use bay </item>
+        <item>T Voucher/pay and display ticket used in permit bay </item>
+        <item>U Mobile phone parking </item>
+        <item>V Voucher </item>
+        <item>W Wrong parking zone </item>
+        <item>X Incorrect VRM </item>
+        <item>Y Obscured/illegible permit </item>
+        <item>Z Out of date permit </item>
+        <item>1 Electric bay</item>
+        <item>2 Goods vehicle loading bays</item>
+        <item>3 Bicycle bay</item>
+        <item>4 Virtual permit</item>
+    </string-array>
+
+    <string-array name="footway_suffixes">
+        <item>1 One wheel on footway </item>
+        <item>2 Partly on footway</item>
+        <item>4 All wheels on footway</item>
+        <item>C on vehicle crossover</item>
+        <item>G on grass verge</item>
+    </string-array>-->
+
+    <string-array name="max_time">
+        <item>30 Minutes</item>
+        <item>1 Hour</item>
+        <item>1.5 Hours</item>
+        <item>2 Hours</item>
+    </string-array>
+
+    <string name="max_return_prompt">Select Min Return Time</string>
+    <string name="max_time_prompt">Select Max Time</string>
+    <string name="permit_type_prompt">Select Permit Type</string>
+
+    <!-- <string-array name="permit_types">
+        <item>Residents</item>
+        <item>Blue badge</item>
+        <item>No Permit Seen</item>
+    </string-array> -->
+
+    <!-- PCN Strings -->
+
+    <string name="pcn_field">PCN No:</string>
+    <string name="pcn_date_field">Notice Service Date:</string>
+    <string name="pcn_registration_field">Vehicle Registration Number</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_print_test">PrintTestActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_pcnlist">PCNListActivity</string>
+
+    <!--
+         Copyright (C) 2007 The Android Open Source Project
+
+         Licensed under the Apache License, Version 2.0 (the "License");
+         you may not use this file except in compliance with the License.
+         You may obtain a copy of the License at
+
+              http://www.apache.org/licenses/LICENSE-2.0
+
+         Unless required by applicable law or agreed to in writing, software
+         distributed under the License is distributed on an "AS IS" BASIS,
+         WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+         See the License for the specific language governing permissions and
+         limitations under the License.
+    -->
+
+
+    <!--  -->
+    <!-- Label shown on launcher icon -->
+    <!-- Label for the this application displayed on-screen when this application must be represented to the user. -->
+    <string name="app_label">Clock</string>
+
+    <!-- Title for AlarmClock activity -->
+    <!-- Label for the Alarms activity displayed on-screen when that activity must be represented to the user. -->
+    <string name="alarm_list_title">Alarms</string>
+
+    <!-- Menu item on Alarm Clock screen: Add alarm -->
+    <string name="add_alarm">Add alarm</string>
+
+    <!-- Title text for alarm timeline view [CHAR LIMIT=20] -->
+    <string name="alarm_timeline_title_text">NEXT ALARMS</string>
+
+    <!-- Menu item on Alarm Clock screen: Desk clock -->
+    <string name="menu_desk_clock">Desk clock</string>
+
+    <!-- Menu item on Alarm Clock screen: Edit alarm -->
+    <string name="menu_edit_alarm">Edit alarm</string>
+
+    <!-- Context Menu Item on Alarm Settings screen: Delete alarm -->
+    <string name="delete_alarm">Delete alarm</string>
+
+    <!-- Context Menu Item on Alarm Settings screen: Enable alarm -->
+    <string name="enable_alarm">Turn alarm on</string>
+
+    <!-- Context Menu Item on Alarm Settings screen: Disable alarm -->
+    <string name="disable_alarm">Turn alarm off</string>
+
+    <!-- Delete alarm confirmation dialog message. -->
+    <string name="delete_alarm_confirm">Delete this alarm?</string>
+
+    <!-- Menu item on Alarm Clock screen: Show clock -->
+    <string name="show_clock">Show clock</string>
+
+    <!-- Menu item on Alarm Clock screen: Hide clock -->
+    <string name="hide_clock">Hide clock</string>
+
+    <!-- Setting label on Set alarm screen: Label -->
+    <string name="label">Label</string>
+
+    <!-- Default label to display for an alarm -->
+    <string name="default_label">Alarm</string>
+
+    <!-- Preference category on Alarm Settings screen: Set alarm -->
+    <!-- Also label for the old Alarms dialog activity displayed on-screen when that activity must be represented to the user. -->
+    <string name="set_alarm">Set alarm</string>
+
+    <!-- Setting labels on Set alarm screen: Vibration on or off -->
+    <string name="alarm_vibrate">Vibrate</string>
+
+    <!-- Setting labels on Set alarm screen: Repeat -->
+    <string name="alarm_repeat">Repeat</string>
+
+    <!-- Setting labels on Set alarm screen: Select alarm ringtone -->
+    <string name="alert">Alarm Ringtone</string>
+
+    <!-- Label on expanded alarm edit view. -->
+    <string name="ringtone">Ringtone</string>
+
+    <!-- Setting labels on Set alarm screen: Set time -->
+    <string name="time">Time</string>
+
+    <!-- Button labels on the alarm dialog: Dismiss -->
+    <string name="alarm_alert_dismiss_text">Dismiss</string>
+
+    <!-- Button labels on the pre-dismiss alarm notifications: Dismiss now -->
+    <string name="alarm_alert_dismiss_now_text">Dismiss Now</string>
+
+    <!--
+             Alarm Alert screen: this message is shown after an alarm rung
+             unattended for a number of minutes.  It tells the user that
+             the alarm has been silenced.
+    -->
+    <string name="alarm_missed_title">Missed alarm</string>
+    <string name="alarm_missed_text"><xliff:g id="alarm_time">%s</xliff:g> - <xliff:g id="alarm_label">%s</xliff:g></string>
+
+    <!-- Button labels on the alarm dialog: Snooze -->
+    <string name="alarm_alert_snooze_text">Snooze</string>
+
+    <!--
+             Toast that appears after Alarm is snoozed from the Alarm
+             dialog. Says the alarm will snooze for xxx minutes.
+    -->
+    <plurals name="alarm_alert_snooze_set">
+
+        <!-- Duration for one minute -->
+        <item quantity="one">Snoozing for 1 minute.</item>
+        <!-- Duration for more than one minute -->
+        <item quantity="other">Snoozing for <xliff:g id="minutes">%d</xliff:g> minutes.</item>
+    </plurals>
+
+    <!-- Text to appear inside a notification while an alarm is snoozing. -->
+    <string name="alarm_alert_snooze_until">Snoozing until <xliff:g id="time">%s</xliff:g></string>
+
+    <!-- Text to appear in the notification title while an alarm is about to go off. -->
+    <string name="alarm_alert_predismiss_title">Upcoming alarm</string>
+
+    <!-- Text to appear in when trying to view a missed alarm that has been deleted -->
+    <string name="missed_alarm_has_been_deleted">Your missed alarm has been deleted</string>
+
+    <!--
+             0: nothing
+             1: days
+             2:      hours
+             3: days hours
+             4:            minutes
+             5: days       minutes
+             6:      hours minutes
+             7: days hours minutes
+    -->
+    <skip />
+
+    <!-- Timer notification: how long from now until timer goes off. -->
+    <!-- <string-array name="timer_notifications">
+        <item>Less than a minute remaining</item>
+        <item><xliff:g example="2 hours" id="HOURS">%1$s</xliff:g> remaining</item>
+        <item><xliff:g example="2 minutes" id="MINUTES">%2$s</xliff:g> remaining</item>
+        <item><xliff:g example="2 hours" id="HOURS">%1$s</xliff:g><xliff:g example="2 minutes" id="MINUTES">%2$s</xliff:g> remaining</item>
+    </string-array> -->
+
+    <!--
+             Alarm confirmation toast: Describes how long from now until
+             alarm fires
+    -->
+    <!-- <string-array name="alarm_set">
+        <item>Alarm set for less than 1 minute from now.</item>
+        <item>Alarm set for <xliff:g example="2 days" id="DAYS">%1$s</xliff:g> from now.</item>
+        <item>Alarm set for <xliff:g example="2 hours" id="HOURS">%2$s</xliff:g> from now.</item>
+        <item>Alarm set for <xliff:g example="2 days" id="DAYS">%1$s</xliff:g> and <xliff:g example="2 hours" id="HOURS">%2$s</xliff:g> from now.</item>
+        <item>Alarm set for <xliff:g example="2 minutes" id="MINUTES">%3$s</xliff:g> from now.</item>
+        <item>Alarm set for <xliff:g example="2 days" id="DAYS">%1$s</xliff:g> and <xliff:g example="2 minutes" id="MINUTES">%3$s</xliff:g> from now.</item>
+        <item>Alarm set for <xliff:g example="2 hours" id="HOURS">%2$s</xliff:g> and <xliff:g example="2 minutes" id="MINUTES">%3$s</xliff:g> from now.</item>
+        <item>Alarm set for <xliff:g example="2 days" id="DAYS">%1$s</xliff:g>, <xliff:g example="2 hours" id="HOURS">%2$s</xliff:g>, and <xliff:g example="2 minutes" id="MINUTES">%3$s</xliff:g> from now.</item>
+    </string-array> -->
+
+    <!-- Alarm confirmation toast: singular day -->
+    <string name="day">"1 day"</string>
+
+    <!-- Alarm confirmation toast: plural days -->
+    <string name="days">"<xliff:g id="days">%s</xliff:g> days"</string>
+
+    <!-- Alarm confirmation toast: singular hour -->
+    <string name="hour">1 hour</string>
+
+    <!-- Alarm confirmation toast: plural hours -->
+    <string name="hours"><xliff:g id="hours">%s</xliff:g> hours</string>
+
+    <!-- Alarm confirmation toast: singular minute -->
+    <string name="minute">"1 minute"</string>
+
+    <!-- Alarm confirmation toast: plural minutes -->
+    <string name="minutes">"<xliff:g id="minutes">%s</xliff:g> minutes"</string>
+
+    <!--
+             Repeat options that appear under an alarm on main Alarm Clock
+             screen to identify repetition schedule: special case for when
+             the alarm is set to repeat every day
+    -->
+    <string name="every_day">Every day</string>
+
+    <!--
+             Repeat options that appear under an alarm on main Alarm Clock
+             screen to identify repetition schedule: special case for when
+             the alarm is set to never repeat
+    -->
+    <string name="never">Never</string>
+
+    <!--
+             Repeat options that appear under an alarm on main Alarm Clock
+             screen to identify repetition schedule: concatenate days with
+             this character, i.e. "Mon, Tue, Wed"
+    -->
+    <string name="day_concat">", "</string>
+
+    <!--
+             Appears at the top of the Clock Picker screen: Tell user to
+             select a clock to display
+    -->
+    <string name="clock_instructions">Choose a clock</string>
+
+    <!-- Label for analog clock gadget displayed on-screen when that gadget is represented to the user. -->
+    <string name="analog_gadget">Analog clock</string>
+
+    <!-- Help activity name -->
+    <string name="help">help</string>
+
+    <!-- Settings activity name -->
+    <!-- Label for the Settings activity displayed on-screen when that activity must be represented to the user. -->
+
+
+    <!-- Setting title for changing the snooze duration. -->
+    <string name="snooze_duration_title">Snooze length</string>
+
+    <plurals name="snooze_duration">
+
+        <!-- Duration for one minute -->
+        <item quantity="one">1 minute</item>
+        <!-- Duration for more than one minute -->
+        <item quantity="other"><xliff:g example="7" id="number">%d</xliff:g> minutes</item>
+    </plurals>
+    <plurals name="snooze_picker_label">
+
+        <!-- Duration for one minute -->
+        <item quantity="one">minute</item>
+        <!-- Duration for more than one minute -->
+        <item quantity="other">minutes</item>
+    </plurals>
+
+    <!-- Auto silence preference title -->
+    <string name="auto_silence_title">Silence after</string>
+
+    <!-- Auto silence summary string set based on the preference value. -->
+    <string name="auto_silence_summary"><xliff:g id="minutes">%d</xliff:g> minutes</string>
+
+    <!-- Auto silence summary when turned off -->
+    <string name="auto_silence_never">Never</string>
+
+    <!-- Done button when editing an alarm. -->
+    <string name="done">Done</string>
+
+    <!-- Revert button when editing an alarm. -->
+    <string name="revert">Revert</string>
+
+    <!-- Delete button when editing an alarm. -->
+    <string name="delete">Delete</string>
+
+    <!-- Setting title for changing the alarm volume. -->
+    <string name="alarm_volume_title">Alarm volume</string>
+
+    <!-- Summary for the alarm preference when silent is chosen. -->
+    <string name="silent_alarm_summary">Silent</string>
+
+    <!-- Text to display in the small text of the notification -->
+    <string name="alarm_notify_text">Snooze or dismiss alarm.</string>
+
+    <!-- Text to display in the notification ticker and label -->
+    <string name="alarm_notify_snooze_label"><xliff:g id="label">%s</xliff:g> (snoozed)</string>
+
+    <!-- Text to display in the notification when the alarm has been snoozed -->
+    <string name="alarm_notify_snooze_text">Alarm set for <xliff:g id="time">%s</xliff:g>. Touch to cancel.</string>
+
+    <!--
+             Title of the setting to change hardware button behavior. This string
+             should be changed for each piece of hardware. [CHAR LIMIT=20]
+    -->
+    <string name="volume_button_setting_title">Volume buttons</string>
+
+    <!-- Dialog title of the volume and power setting. -->
+    <string name="volume_button_dialog_title">Button effect</string>
+
+    <!-- Entries listed in the setting for the side-button action. -->
+    <!-- <string-array name="volume_button_setting_entries">
+        <item>Snooze</item>
+        <item>Dismiss</item>
+        <item>Do nothing</item>
+    </string-array> -->
+
+    <!-- Values for the side-button setting. -->
+    <!-- <string-array name="volume_button_setting_values" translatable="false">
+        <item>1</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array> -->
+
+    <!-- Title of the ringtone setting. -->
+    <string name="default_ringtone_setting_title">Set default ringtone</string>
+
+    <!-- Accessibility labels for Clock activity buttons -->
+    <skip />
+
+    <string name="alarm_button_description">Alarms</string>
+    <string name="gallery_button_description">Gallery</string>
+    <string name="music_button_description">Music</string>
+    <string name="nightmode_button_description">Dim</string>
+    <string name="home_button_description">Launcher</string>
+    <string name="desk_clock_button_description">Clock display</string>
+
+    <!-- Accessibility labels for alarm buttons -->
+    <string name="label_description">Label</string>
+    <string name="ringtone_description">Ringtone</string>
+
+    <!-- A short representation of charging information, e.g "34%" -->
+    <string name="battery_charging_level"><xliff:g id="number">%d</xliff:g><xliff:g id="percent">%%</xliff:g></string>
+
+    <!--
+             What to show the user if the weather widget exists but fails to
+             respond. This is a sign of an error; if the weather widget is not
+             present on the device, we show nothing at all.
+    -->
+    <string name="weather_fetch_failure">Weather information isn\'t available right now.</string>
+
+    <!--
+             A description for the DeskClock alarm sound playback service.
+             [CHAR LIMIT=NONE]
+    -->
+    <string name="alarm_klaxon_service_desc">Sound playback service for alarms set in Clock.</string>
+
+    <!--
+             String displayed as the alert summary while loading the alert name from
+             the media player. [CHAR LIMIT=NONE]
+    -->
+    <string name="loading_ringtone">Loading ringtone\u2026</string>
+
+    <!--
+             A description for the DeskClock timer sound playback service.
+             [CHAR LIMIT=NONE]
+    -->
+    <string name="timer_ring_service_desc">Sound playback service for timers set in Clock.</string>
+
+    <!-- Label on the main screen control used to set alarm [CHAR LIMIT=30] -->
+    <string name="control_set_alarm">Set alarm</string>
+
+    <!-- Label on the main screen control used to set alarm when there is already an existing alarm [CHAR LIMIT=30] -->
+    <string name="control_set_alarm_with_existing"><xliff:g id="time">%s</xliff:g></string>
+
+    <!-- ActionBar strings -->
+    <!-- Describes the purpose of the tab button which which switches the activity to the Alarm page -->
+    <string name="menu_alarm">Alarm</string>
+    <!-- Describes the purpose of the tab button which which switches the activity to the Timer page -->
+    <string name="menu_timer">Timer</string>
+    <!-- Describes the purpose of the tab button which which switches the activity to the Clock page -->
+    <string name="menu_clock">Clock</string>
+    <!-- Describes the purpose of the tab button which which switches the activity to the Stopwatch page -->
+    <string name="menu_stopwatch">Stopwatch</string>
+
+    <!-- - Clock view buttons strings -->
+    <!-- Describes the purpose of the button to start the activity to add/edit/delete alarms -->
+    <string name="button_alarms">Alarms</string>
+    <!-- Describes the purpose of the button which provides a list of cities for the world clock settings -->
+    <string name="button_cities">Cities</string>
+    <!-- Describes the purpose of the button which pops up a menu of setting choices -->
+    <string name="button_menu">More options</string>
+    <!-- Menu item on most screens to get to more settings -->
+    <string name="menu_item_settings">Settings</string>
+    <!-- Menu item on most screens to get to the help information -->
+    <string name="menu_item_help">Help</string>
+    <!-- Menu item on clock screen to enter night mode. -->
+    <string name="menu_item_night_mode">Night mode</string>
+    <!-- Menu item on Cities screen to sort by GMT offset -->
+    <string name="menu_item_sort_by_gmt_offset">Sort by time</string>
+    <!-- Menu item on Cities screen to sort by alphabetical order -->
+    <string name="menu_item_sort_by_name">Sort by name</string>
+
+    <!-- Label for selected cities in Cities list view -->
+    <string name="selected_cities_label">Selected Cities</string>
+
+    <!-- Stop Watch strings -->
+    <!-- Describes the purpose of the button to resume running a stopwatch -->
+    <string name="sw_resume_button">Resume</string>
+    <!-- Describes the purpose of the button to begin running a stopwatch -->
+    <string name="sw_start_button">Start</string>
+    <!-- Describes the purpose of the button to pause a stopwatch. -->
+    <string name="sw_stop_button">Stop</string>
+    <!-- Describes the purpose of the button to record current the stopwatch value into the4 collection of lap times. -->
+    <string name="sw_lap_button">Lap</string>
+    <!-- Describes the purpose of the button to return the stopwatch to zero and remove the lap times. -->
+    <string name="sw_reset_button">Reset</string>
+    <!-- Describes the purpose of the button to share the stopwatch value. -->
+    <string name="sw_share_button">Share</string>
+
+    <!-- Abbreviation for temporal hours [CHAR LIMIT=1] -->
+    <string name="hours_label">h</string>
+    <!-- Abbreviation for temporal minutes [CHAR LIMIT=1] -->
+    <string name="minutes_label">m</string>
+    <!-- Abbreviation for temporal seconds [CHAR LIMIT=1] -->
+    <string name="seconds_label">s</string>
+    <!-- Accessibility strings -->
+    <string name="hours_label_description">hours</string>
+    <string name="minutes_label_description">minutes</string>
+    <string name="seconds_label_description">seconds</string>
+    <string name="zero">0</string>
+
+    <!-- Stopwatch share strings -->
+    <!-- Sentence within the message created to share the total time recorded within the stopwatch -->
+    <string name="sw_share_main">My time is <xliff:g id="time">%s</xliff:g></string>
+    <!-- Header within the message created to share a list of lap times (a new line is appended to this) -->
+    <string name="sw_share_laps">Lap times:</string>
+    <!-- Label to enumerate the number of laps in the notification the user has counted -->
+    <string name="sw_notification_lap_number">Lap <xliff:g id="number">%d</xliff:g></string>
+    <!-- Formatted stopwatch time -->
+    <!-- <string-array name="stopwatch_format_set" translatable="false">
+        <item> &lt;!&ndash; <10 minutes - example "1 02.03" &ndash;&gt;
+            <xliff:g id="M">%2$d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> &lt;!&ndash; <1 hour - example "12 03.04" &ndash;&gt;
+            <xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> &lt;!&ndash; <10 hours - example "1 02 03.04" &ndash;&gt;
+            <xliff:g id="H">%1$d</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> &lt;!&ndash; <100 hours - example "12 03 04.05" &ndash;&gt;
+            <xliff:g id="H">%1$02d</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> &lt;!&ndash; <1000 hours - example "123 04 05.06" &ndash;&gt;
+            <xliff:g id="H">%1$03d</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+    </string-array> -->
+
+    <!-- Formatted stopwatch time for laps shared using the share button -->
+    <!-- <string-array name="shared_laps_format_set" translatable="false">
+        <item> &lt;!&ndash; <10 minutes - example "1 02.03" &ndash;&gt;
+            <xliff:g id="lap">%6$d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g> ‎<xliff:g id="M">%2$d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> &lt;!&ndash; <1 hour - example "12 03.04" &ndash;&gt;
+            <xliff:g id="lap">%6$d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> &lt;!&ndash; <10 hours - example "1 02 03.04" &ndash;&gt;
+            <xliff:g id="lap">%6$d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g> ‎<xliff:g id="H">%1$d</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> &lt;!&ndash; <100 hours - example "12 03 04.05" &ndash;&gt;
+            <xliff:g id="lap">%6$d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g> ‎<xliff:g id="H">%1$02d</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+        <item> &lt;!&ndash; <1000 hours - example "123 04 05.06" &ndash;&gt;
+            <xliff:g id="lap">%6$d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g> ‎<xliff:g id="H">%1$03d</xliff:g> ‎<xliff:g id="M">%2$02d</xliff:g> ‎<xliff:g id="S">%3$02d</xliff:g><xliff:g id="decimal_separator">%5$c</xliff:g><xliff:g id="D">%4$02d</xliff:g></item>
+    </string-array> -->
+
+    <!-- Label to enumerate the number of laps the user has counted -->
+    <!-- <string-array name="sw_lap_number_set" translatable="false">
+        <item># <xliff:g id="number">%d</xliff:g></item>
+        <item># <xliff:g id="number">%02d</xliff:g></item>
+    </string-array> -->
+
+    <!-- Stopwatch accessibility strings -->
+    <plurals name="Nhours_description">
+
+        <!-- 1 hour -->
+        <item quantity="one">1 hour</item>
+        <!-- more -->
+        <item quantity="other"><xliff:g example="7" id="number">%d</xliff:g> hours</item>
+    </plurals>
+    <plurals name="Nminutes_description">
+
+        <!-- 1 minute -->
+        <item quantity="one">1 minute</item>
+        <!-- more -->
+        <item quantity="other"><xliff:g example="7" id="number">%d</xliff:g> minutes</item>
+    </plurals>
+    <plurals name="Nseconds_description">
+
+        <!-- 1 second -->
+        <item quantity="one">1 second</item>
+        <!-- more -->
+        <item quantity="other"><xliff:g example="7" id="number">%d</xliff:g> seconds</item>
+    </plurals>
+
+    <!-- timer strings -->
+    <!-- Describes the purpose of the button to add a new timer -->
+    <string name="timer_add_timer">Add Timer</string>
+    <!-- Describes the purpose of the button to begin or continue running a timer -->
+    <string name="timer_start">Start</string>
+    <!-- Describes the purpose of the button to delete a timer. -->
+    <string name="timer_delete">Delete</string>
+    <!-- Describes the purpose of the button increase the remaining time on a timer by one minute. -->
+    <string name="timer_plus_one">Add 1 Minute</string>
+    <!-- Like "timer_plus_one", but with 'minute' abbreviated for the notification. -->
+    <string name="timer_plus_1_min">Add 1 min</string>
+    <!-- Describes the purpose of the button to stop the timer. -->
+    <string name="timer_stop">Stop</string>
+    <!-- Describes the purpose of the button to stop and delete the timer. -->
+    <string name="timer_done">Done</string>
+    <!-- Describes the purpose of the button to return the timer to it's original starting value. -->
+    <string name="timer_reset">Reset</string>
+    <!-- Describes the purpose of the button to discard the current dialog values. Will also close the dialog if other time's exist -->
+    <string name="timer_cancel">Cancel</string>
+    <!-- Notification content shown when a timer has completed and has no more time remaining -->
+    <string name="timer_times_up">Time\'s up</string>
+    <!-- Label associated with a notification for a Timer -->
+    <string name="timer_notification_label">Timer</string>
+
+    <plurals name="timers_num">
+
+        <!-- 1 timer -->
+        <item quantity="one">1 minute</item>
+        <!-- more -->
+        <item quantity="other"><xliff:g example="7" id="number">%d</xliff:g> timers</item>
+    </plurals>
+
+    <!-- Title with the clock on the main page displaying the user's regular timezone (shows when automatic_home_clock enabled) -->
+    <string name="home_label">Home</string>
+    <!-- Label for the Cities activity displayed on-screen when that activity must be represented to the user. -->
+    <string name="cities_activity_title">Cities</string>
+
+    <!-- Settings strings -->
+    <!-- Header in the preferences settings for the section pertaining to clocks on the main fragment -->
+    <string name="clock_settings">CLOCK</string>
+    <!-- Header for a Clock Dream Setting referring to choosing analog or digital style -->
+    <string name="clock_style">Style</string>
+
+    <!--
+             Entries listed in the ListPreference when invoking the clock style
+             preference.
+    -->
+    <!-- <string-array name="clock_style_entries">
+        <item>Analog</item>
+        <item>Digital</item>
+    </string-array> -->
+
+    <!--
+             Values that are retrieved from the ListPreference. These must match
+             the clock_style_entries above.
+    -->
+    <!-- <string-array name="clock_style_values" translatable="false">
+        <item>analog</item>
+        <item>digital</item>
+    </string-array> -->
+
+    <!-- Title for an option that will automtically show a clock representing the user's regular timezone on the main fragment whenever the user leaves their regular timezone -->
+    <string name="automatic_home_clock">Automatic home clock</string>
+    <!-- Describes the functionality provided by the automatic_home_clock option -->
+    <string name="automatic_home_clock_summary">While traveling in an area where the time is different, add a clock for home</string>
+    <!-- Title in the preferences change the time zone for the user's home -->
+    <string name="home_time_zone">Home time zone</string>
+    <!-- Title in a list dialog box to pick a time zone for the user's home -->
+    <string name="home_time_zone_title">Home time zone</string>
+
+    <!-- Textual content of the button to discard the current dialog values and close the dialog -->
+    <string name="time_picker_cancel">Cancel</string>
+    <!-- Textual content of the button to update an alarm with the current dialog values -->
+    <string name="time_picker_set">OK</string>
+    <string name="time_picker_time_seperator">:</string>
+    <!-- place holder for am/pm label when it is not set -->
+    <string name="time_picker_ampm_label">--</string>
+    <!-- add 00 as minutes to the time when pressing this button -->
+    <string name="time_picker_00_label">:00</string>
+    <!-- add 30 as minutes to the time when pressing this button -->
+    <string name="time_picker_30_label">:30</string>
+
+    <!-- Choices for timezones, must be kept in sync with timezone_values. -->
+    <!-- Header in the preferences settings for the section pertaining to alarms -->
+    <string name="alarm_settings">ALARMS</string>
+    <!-- Describes the purpose of the button to show the remaining choices whenever there were too many -->
+    <string name="see_all">See all…</string>
+    <string name="desk_clock_help_url" translatable="false"></string>
+    <!-- Describes the running service for the stopwatch -->
+    <string name="stopwatch_service_desc">Stopwatch service to run the notification.</string>
+    <!-- Desription for the stopped stop watch -->
+    <string name="swn_stopped">Stopped</string>
+
+    <!-- Description of the right direction in the alarm alert screen. [CHAR LIMIT=NONE] -->
+    <string name="description_direction_right">Slide right to dismiss</string>
+    <!-- Description of the left direction in the alarm alert screen. [CHAR LIMIT=NONE] -->
+    <string name="description_direction_left">Slide left to snooze</string>
+    <!-- Description of the up direction in the alarm alert screen. [CHAR LIMIT=NONE] -->
+    <string name="description_direction_up">Slide up to dismiss</string>
+    <!-- Description of the down direction in the alarm alert screen. [CHAR LIMIT=NONE] -->
+    <string name="description_direction_down">Slide down to snooze</string>
+
+    <!-- Notification title when timer is stopped. -->
+    <string name="timer_stopped">Timer stopped</string>
+    <!-- Notification title when multiple timers are stopped. -->
+    <string name="timers_stopped"><xliff:g example="7" id="number">%d</xliff:g> timers stopped</string>
+    <!-- Notification text when multiple timers are stopped. -->
+    <string name="all_timers_stopped_notif">Touch to see your timers</string>
+    <!-- Notification title when at least one timer, of those in use, is counting down. -->
+    <string name="timers_in_use"><xliff:g example="7" id="number">%d</xliff:g> timers</string>
+    <!-- Notification text when at least one timer, of those in use, is counting down. -->
+    <string name="next_timer_notif">Next timer: <xliff:g example="2 minutes remaining" id="time_remaining">%s</xliff:g></string>
+
+    <!-- screensaver settings strings -->
+    <!-- Label for the screen saver activity displayed on-screen when that activity must be represented to the user. -->
+    <string name="screensaver_settings">Dream settings</string>
+    <!-- Title for check box to pick intensity of display diminuation during dream mode -->
+    <string name="night_mode_title">Night mode</string>
+    <!-- Describes intensity of display diminuation during dream mode -->
+    <string name="night_mode_summary">Very dim display (for dark rooms)</string>
+
+    <!-- Description of the down caret in the alarm alert screen to expand the alarm content to edit perspective. [CHAR LIMIT=NONE] -->
+    <string name="expand_alarm">Expand alarm</string>
+    <!-- Description of the up caret in the alarm alert screen to collapse the alarm content to summary perspective. [CHAR LIMIT=NONE] -->
+    <string name="collapse_alarm">Collapse alarm</string>
+
+    <!-- Description of the button to undo change to alarm -->
+    <string name="alarm_undo">undo</string>
+    <!-- Toast content when an alarm was deleted -->
+    <string name="alarm_deleted">Alarm deleted.</string>
+    <!-- slash between date and next alarm in the clock -->
+    <string name="slash"> / </string>
+    <!-- slash between date and next alarm in the clock -->
+    <string name="world_day_of_week_label"> / <xliff:g id="label">%s</xliff:g></string>
+    <!-- Description of field showing the next alarm time in the clock page, for accessibility. -->
+    <string name="next_alarm_description">Next alarm: <xliff:g example="Wed 8:00am" id="alarm_time">%s</xliff:g></string>
+    <string name="label_unlabeled"></string>
+
+    <!-- Displays the number of alarms selected from the list of alarms. -->
+    <string name="alarms_selected"><xliff:g id="alarms">%d</xliff:g> selected</string>
+
+    <!-- message used by the talkback accessebility app to say that something was deleted -->
+    <string name="deleted_message">Deleted</string>
+
+    <!-- Alarm deletion confirmation message -->
+    <plurals name="alarm_delete_confirmation">
+
+        <!-- Confirmation for one alarm -->
+        <item quantity="one">Delete selected alarm?</item>
+        <!-- Confirmation more than one alarm -->
+        <item quantity="other">Delete selected alarms?</item>
+    </plurals>
+
+    <!-- Timer deletion confirmation -->
+    <string name="timer_delete_confirmation">Delete this timer?</string>
+
+    <!-- world clock deletion confirmation -->
+    <string name="city_delete_confirmation">Remove this city?</string>
+
+    <!-- Label for digital clock gadget displayed on-screen when that gadget is represented to the user. -->
+    <string name="digital_gadget">Digital clock</string>
+
+    <!-- format strings for clocks -->
+    <string name="clock_24_hours_format" translatable="false">kk:mm</string>
+    <string name="main_widget_12_hours_format" translatable="false">h:mm</string>
+    <!-- Font size for AM/PM should match widget_label_font_size -->
+    <string name="wc_widget_12_hours_format" translatable="false">h:mm <b><font face="sans-serif-condensed" size="14">a</font></b></string>
+    <!-- Font size for AM/PM should match bottom_text_size -->
+    <string name="main_clock_12_hours_format" translatable="false">h:mm <b><font face="sans-serif-condensed" size="16">a</font></b></string>
+    <!-- Font size for AM/PM should match label_font_size -->
+    <string name="world_clock_12_hours_format" translatable="false">h:mm <b><font face="sans-serif-condensed" size="14">a</font></b></string>
+    <!-- Font size for AM/PM should match alarm_label_size -->
+    <string name="alarm_time_12_hours_format" translatable="false">h:mm <b><font face="sans-serif-condensed" size="14">a</font></b></string>
+
+    <!-- String for no alarms -->
+    <string name="no_alarms">No Alarms</string>
+    <!-- String for no enabled alarms in timeline view [CHAR LIMIT=30] -->
+    <string name="no_upcoming_alarms">NO UPCOMING ALARMS</string>
+    <string name="title_activity_pcnlogging">PCNLoggingActivity</string>
+    <string name="title_activity_visual_pcnlist">VisualPCNListActivity</string>
+
+    <!-- Keyboard string -->
+    <string name="word_separators">\u0020.,;:!?\n()[]*@{}/_+=|"</string>
+
+    <!-- Labels on soft keys -->
+    <string name="label_go_key">Go</string>
+    <string name="label_next_key">Next</string>
+    <string name="label_send_key">Send</string>
+    <!-- Labels for subtype -->
+    <string name="label_subtype_generic">%s</string>
+    <string name="label_subtype_en_GB">English (GB)</string>
+    <!-- Titles for ImePreference -->
+    <string name="settings_name">CEO Keyboard Settings</string>
+    <string name="language_selection_title">Input languages</string>
+    <string name="select_language">Select input languages</string>
+    <string name="general_category">General</string>
+    <string name="no_connectivity">You are not connected to the Internet.</string>
+    <string name="no_connectivity_mobile">You are not connected to any mobile network.</string>
+    <string name="prefs_list_support_header">Vehicles with models</string>
+    <string name="prefs_list_nosupport_header">Other Vehicles</string>
+    <string name="title_activity_start_day">Start Of Day</string>
+    <string name="title_activity_end_of_day">End Of Day</string>
+    <string name="title_activity_break">Break</string>
+    <string name="title_activity_pcncamera">PCN Photos</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_notes_list">NotesList</string>
+    <string name="title_activity_text_note">Notes</string>
+    <string name="title_activity_supervisor">Supervisor End of Day</string>
+    <string name="pdHeader">P &amp; D Expiry Time:</string>
+    <string name="pdNegButton">No P &amp; D </string>
+    <string name="pdReference">P &amp; D Reference number </string>
+    <string name="pdButton">P &amp; D Ticket</string>
+    <string name="pdCaption">P&amp;D</string>
+    <string name="title_activity_defect_recording">Record Defect</string>
+    <string name="title_activity_vrmlookup_summary">VRM Lookup Summary</string>
+    <string name="title_activity_vrmlookup_detail">VRM Lookup Detail</string>
+    <string name="title_activity_message_view">MessageViewActivity</string>
+    <string name="title_activity_message">Messages</string>
+    <string name="clear_suffix"><u>Clear Suffix</u></string>
+    <string name="anpr">ANPR</string>
+
+    <array name="swipe_refresh_colors">
+        <item>#24c6d5</item>
+        <item>#57dd86</item>
+        <item>#ad7dcf</item>
+        <item>#ff484d</item>
+        <item>#fcba59</item>
+        <item>#24c6d5</item>
+    </array>
+    <string name="no_internet_connection" translatable="false">No Internet connection !!</string>
+    <string name="please_wait">Please Wait</string>
+
+</resources>

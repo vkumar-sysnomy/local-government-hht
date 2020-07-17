@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.farthestgate.android.ui.dialogs.vehicle_logging.MakesSelectFragment"
+    android:background="#e0e1e3">
+
+    <FrameLayout
+        android:id="@+id/list_manuf"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/searchFilter"
+        android:background="#72000000">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/list_select_manufacturer"
+            android:layout_gravity="top"
+            android:dividerHeight="2dp"
+            android:scrollbarStyle="insideOverlay"
+            android:drawSelectorOnTop="true"
+            android:divider="#42FFFFFF"
+            android:paddingLeft="2dp"
+            android:layout_marginLeft="2dp" />
+    </FrameLayout>
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/searchFilter"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Filter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="10dp"
+        android:inputType="text"
+        android:textSize="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:autoText="false"
+        android:background="@drawable/input_filter"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <!-- android:background="@drawable/rounded_button_white" -->
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pbManufacturer"
+        android:indeterminate="true"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

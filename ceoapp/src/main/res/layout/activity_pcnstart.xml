@@ -1,0 +1,172 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.farthestgate.android.ui.pcn.PCNStartActivity"
+    android:columnCount="2"
+    android:rowCount="6"
+    android:alignmentMode="alignMargins"
+    android:background="#283233"
+    android:columnOrderPreserved="true"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <AutoCompleteTextView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:hint="Street Name"
+        android:id="@+id/txtStreetNames"
+        android:singleLine="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="10dp"
+        android:textSize="35dp"
+        android:gravity="left|center_vertical"
+        android:drawableRight="@drawable/cross_green_m"
+        android:maxLines="2"
+        android:background="#ffffff"
+        android:layout_margin="4dp"
+        android:paddingLeft="10dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="false"
+        android:id="@+id/layoutContravention"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="#ffffff"
+        android:weightSum="1"
+        android:layout_below="@+id/VRM_Auto"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+
+        <view
+            android:layout_width="0dp"
+            android:layout_height="140dp"
+            class="com.farthestgate.android.ui.components.CustomSpinner"
+            android:id="@+id/spnOffence"
+            android:layout_gravity="center"
+            style="@style/spinner_normal"
+            android:layout_weight="0.5"
+            android:focusableInTouchMode="false"
+            android:background="#1dcf37"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:foregroundGravity="center"
+            android:fillViewport="true" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="140dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/clear_suffix"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/clear_suffix"
+                android:layout_marginLeft="3dp"
+                android:textColor="#1dcf37"
+                android:gravity="center"
+                android:background="#e0e1e3"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:background="#e0e1e3"
+                android:layout_marginLeft="2dp"
+                android:id="@+id/scrollView"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="center"
+                android:foregroundGravity="center">
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/rgSuffixes"
+                    android:gravity="fill_horizontal">
+                </RadioGroup>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VRM_Auto"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:hint="VRM"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:inputType="text"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:layout_below="@+id/txtStreetNames"
+        android:textStyle="bold"
+        android:gravity="center_horizontal|bottom"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:textAlignment="gravity"
+        android:textSize="65dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:digits="_,qwertzuiopasdfghjklyxcvbnm,QWERTYUIOPASDFGHJKLZXCVBNM,0123456789">
+        <requestFocus />
+    </EditText>
+
+    <include layout="@layout/toolbar_layout"
+        android:layout_height="90dp"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/toolbar"/>
+
+    <com.farthestgate.android.ui.components.views.FontFitTextView
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="6dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txtContDescription"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:minHeight="90dp"
+        android:background="#ffffff"
+        android:minLines="2"
+        android:focusableInTouchMode="false"
+        android:maxLines="5"
+        android:hint="Contravention Description"
+        android:layout_alignParentBottom="false"
+
+        android:layout_below="@+id/layoutContravention"
+        android:layout_above="@+id/toolbar"
+        android:gravity="center"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textIsSelectable="false"
+        android:layout_marginTop="1dp" />
+
+</RelativeLayout>

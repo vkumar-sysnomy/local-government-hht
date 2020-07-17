@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="medium_bold">
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="medium_light">
+        <item name="android:textSize">@dimen/medium_font_size</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="timer_label">
+        <item name="android:textSize">@dimen/timer_label_font_size</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="button">
+        <item name="android:textSize">@dimen/button_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="dialpad">
+        <item name="android:textSize">@dimen/dialpad_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="dialpad_text" parent="dialpad">
+        <item name="android:textSize">@dimen/dialpad_font_size_ampm</item>
+    </style>
+
+    <style name="bold_button" parent="button">
+        <item name="android:textStyle">bold</item>
+    </style>
+    -    <style name="aosp_time_label">
+        <item name="android:textSize">@dimen/time_label_size</item>
+        <item name="android:textColor">@color/numbers_text_color</item>
+    </style>
+ -    <style name="aosp_ampm_label">
+        <item name="android:textSize">@dimen/ampm_label_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/ampm_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="timer_setup_digit">
+        <item name="android:textSize">@dimen/timer_setup_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+
+    <style name="timer_setup_label">
+        <item name="android:textSize">@dimen/timer_setup_label_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="dialog_button">
+        <item name="android:textSize">@dimen/dialog_button_font_size</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="label">
+        <item name="android:textSize">@dimen/label_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="label_not_caps" parent="label">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="body">
+        <item name="android:textSize">@dimen/body_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="body_not_caps" parent="body">
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="body_bold">
+        <item name="android:textSize">@dimen/body_font_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="spinner_normal" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">200px</item>
+        <item name="android:layout_height">140px</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/bg</item>
+        <item name="child_background">@drawable/line</item>
+        <item name="header_background">@drawable/line</item>
+        <item name="footer_background">@drawable/line</item>
+    </style>
+    <style name="spinner_normal_2" parent="@android:style/TextAppearance.Small">
+        <item name="android:scrollbars">none</item>
+    </style>
+
+    <style name="whiteLargeText">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="whiteMediumText">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <style name="whiteSmallText">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+    </style>
+
+    <style name="greyMediumText">
+        <item name="android:textColor">#ff333333</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <style name="blackMediumText">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <style name="dialogHeaderStyle">
+        <item name="android:background">#42000000</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+    </style>
+
+    <style name="shadowedText">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:shadowColor">#ff2e2e2e</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">2</item>
+    </style>
+
+    <style name="AlarmAlertFullScreenWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/holo_blue_light</item>
+    </style>
+
+    <!--
+         NOTE: This must be a fullscreen theme, or else the fullscreen alarm will
+        be unable to turn the screen on.
+    -->
+    <style name="AlarmAlertFullScreenTheme" parent="android:Theme.Holo.Wallpaper.NoTitleBar">
+        <item name="android:windowTitleStyle">@style/AlarmAlertFullScreenWindowTitle</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+</resources>

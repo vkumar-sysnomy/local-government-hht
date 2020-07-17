@@ -1,0 +1,138 @@
+{"keyboard": [
+    {
+        "Code": "AWC",
+        "Desc": "All Windows Checked"
+    },
+    {
+        "Code": "B/D",
+        "Desc": "Broken Down"
+    },
+    {
+        "Code": "DB",
+        "Desc": "Disabled Badge"
+    },
+    {
+        "Code": "DC",
+        "Desc": "Disabled Clock"
+    },
+    {
+        "Code": "DKM",
+        "Desc": "Double Kerb Mark"
+    },
+    {
+        "Code": "DNS",
+        "Desc": "Driver Not Seen"
+    },
+    {
+        "Code": "DYL",
+        "Desc": "Double Yellow Line"
+    },
+    {
+        "Code": "E",
+        "Desc": "East"
+    },
+    {
+        "Code": "FW",
+        "Desc": "Footway"
+    },
+    {
+        "Code": "FNS",
+        "Desc": "Front Nearside"
+    },
+    {
+        "Code": "FOS",
+        "Desc": "Front Offside"
+    },
+    {
+        "Code": "FTV",
+        "Desc": "Fixed To Vehicle"
+    },
+    {
+        "Code": "HTD",
+        "Desc": "Handed To Driver"
+    },
+    {
+        "Code": "HGV",
+        "Desc": "Heavy Goods Vehicle"
+    },
+    {
+        "Code": "J/W",
+        "Desc": "Junction With"
+    },
+    {
+        "Code": "M/C",
+        "Desc": "Motor Cycle"
+    },
+    {
+        "Code": "N",
+        "Desc": "North"
+    },
+    {
+        "Code": "NS",
+        "Desc": "Nearside"
+    },
+    {
+        "Code": "OPP",
+        "Desc": "Opposite"
+    },
+    {
+        "Code": "O/S",
+        "Desc": "Outside"
+    },
+    {
+        "Code": "OS",
+        "Desc": "Offside"
+    },
+    {
+        "Code": "P&D",
+        "Desc": "Pay & Display"
+    },
+    {
+        "Code": "P/U",
+        "Desc": "Parked and Unattended"
+    },
+    {
+        "Code": "PCV",
+        "Desc": "Public Carriage Vehicle"
+    },
+    {
+        "Code": "RNS",
+        "Desc": "Rear Nearside"
+    },
+    {
+        "Code": "ROS",
+        "Desc": "Rear Offside"
+    },
+    {
+        "Code": "S",
+        "Desc": "South"
+    },
+    {
+        "Code": "SKM",
+        "Desc": "Single Kerb Mark"
+    },
+    {
+        "Code": "SYL",
+        "Desc": "Single Yellow Line"
+    },
+    {
+        "Code": "TP",
+        "Desc": "Time Plate"
+    },
+    {
+        "Code": "VEL",
+        "Desc": "Vehicle Excise License"
+    },
+    {
+        "Code": "VP",
+        "Desc": "Valve Positions"
+    },
+    {
+        "Code": "VRM",
+        "Desc": "Vehicle Registration Mark"
+    },
+    {
+        "Code": "W",
+        "Desc": "West"
+    }
+], "success": "true"}

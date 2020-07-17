@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2012 The Android Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License
+-->
+<!-- =============================== -->
+<!-- GlowPadView class attributes -->
+<!-- =============================== -->
+<resources>
+
+    <declare-styleable name="GlowPadView">
+        <attr name="android:gravity" />
+
+        <!-- Reference to an array resource that be shown as targets around a circle. -->
+        <attr name="targetDrawables" format="reference" />
+
+        <!-- Reference to an array resource that be used as description for the targets around the circle. -->
+        <attr name="targetDescriptions" format="reference" />
+
+        <!-- Reference to an array resource that be used to announce the directions with targets around the circle. -->
+        <attr name="directionDescriptions" format="reference" />
+
+        <!-- Sets a drawable as the center. -->
+        <attr name="handleDrawable" format="reference" />
+
+        <!-- Drawable to use for wave ripple animation. -->
+        <attr name="outerRingDrawable" format="reference" />
+
+        <!-- Drawble used for drawing points -->
+        <attr name="pointDrawable" format="reference" />
+
+        <!-- Inner radius of glow area. -->
+        <attr name="innerRadius" format="dimension" />
+
+        <!-- Outer radius of glow area. Target icons will be drawn on this circle. -->
+        <attr name="outerRadius" format="dimension" />
+
+        <!-- Size of target radius. Points within this distance of target center is a "hit". -->
+<!--         <attr name="hitRadius" format="dimension"/> -->
+
+
+        <!-- Radius of glow under finger. -->
+        <attr name="glowRadius" format="dimension" />
+
+        <!-- Tactile feedback duration for actions. Set to '0' for no vibration. -->
+        <attr name="vibrationDuration" format="integer" />
+
+        <!-- How close we need to be before snapping to a target. -->
+        <attr name="snapMargin" format="dimension" />
+
+        <!-- Number of waves/chevrons to show in animation. -->
+        <attr name="feedbackCount" format="integer" />
+
+        <!-- Used when the handle shouldn't wait to be hit before following the finger -->
+        <attr name="alwaysTrackFinger" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="AnalogClock">
+        <attr name="jewelRadius" format="dimension" />
+        <attr name="jewelOffset" format="dimension" />
+        <attr name="jewelColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="TextTime">
+
+        <!--
+             Specifies the formatting pattern used to show the time and/or date
+             in 12-hour mode. Please refer to {@link android.text.format.DateFormat}
+             for a complete description of accepted formatting patterns.
+             The default pattern is "h:mm a".
+        -->
+        <attr name="format12Hour" format="string" />
+        <!--
+             Specifies the formatting pattern used to show the time and/or date
+             in 24-hour mode. Please refer to {@link android.text.format.DateFormat}
+             for a complete description of accepted formatting patterns.
+             The default pattern is "H:mm".
+        -->
+        <attr name="format24Hour" format="string" />
+    </declare-styleable>
+    <declare-styleable name="BetterPickersDialogFragment">
+        <attr name="bpTextColor" format="reference" />
+        <attr name="bpTitleColor" format="reference" />
+        <attr name="bpDeleteIcon" format="reference" />
+        <attr name="bpCheckIcon" format="reference" />
+        <attr name="bpKeyBackground" format="reference" />
+        <attr name="bpButtonBackground" format="reference" />
+        <attr name="bpTitleDividerColor" format="color" />
+        <attr name="bpDividerColor" format="color" />
+        <attr name="bpKeyboardIndicatorColor" format="color" />
+        <attr name="bpDialogBackground" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="CustomSpinner">
+        <attr name="child_background" format="integer" />
+        <attr name="child_background_2" format="integer" />
+        <attr name="child_background_3" format="integer" />
+        <attr name="header_background" format="integer" />
+        <attr name="footer_background" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="SegmentedButton">
+        <attr name="btnText1" format="string" />
+        <attr name="btnText2" format="string" />
+        <attr name="gradientColorOnStart" format="color" />
+        <attr name="gradientColorOnEnd" format="color" />
+        <attr name="gradientColorOffStart" format="color" />
+        <attr name="gradientColorOffEnd" format="color" />
+        <attr name="gradientColorSelectedStart" format="color" />
+        <attr name="gradientColorSelectedEnd" format="color" />
+        <attr name="strokeLineColor" format="color" />
+        <attr name="strokeLineWidth" format="dimension" />
+        <attr name="cornerRadius" format="dimension" />
+        <attr name="textStyle" format="reference" />
+        <attr name="btnPaddingTop" format="dimension" />
+        <attr name="btnPaddingBottom" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RoundedImageButton">
+        <attr name="button_icon" format="integer" />
+        <attr name="cornerRadiusInDip" format="integer" />
+        <attr name="button_background" format="color" />
+        <attr name="iconBackground" format="color" />
+        <attr name="iconBackgroundPercent" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="FontFitTextView">
+        <attr name="minTextSize" format="dimension" />
+        <attr name="maxTextSize" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageViewSvg"> <attr name="android:src"/> </declare-styleable>
+
+     <!--Horizontal Picker-->
+    <declare-styleable name="HorizontalPicker">
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="values" format="reference" />
+        <attr name="android:ellipsize" />
+        <attr name="android:marqueeRepeatLimit" />
+        <attr name="dividerSize" format="dimension" />
+        <attr name="sideItems" format="integer" />
+    </declare-styleable>
+
+    <attr name="horizontalPickerStyle" format="reference" />
+
+</resources>

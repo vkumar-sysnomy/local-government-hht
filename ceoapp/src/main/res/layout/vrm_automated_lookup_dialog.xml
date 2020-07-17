@@ -1,0 +1,278 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.dialogs.VRMAutomatedLookupDialog">
+
+    <!--<TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This Vehicle has the following parking session"
+        style="@style/blackMediumText"
+        android:textSize="16sp"
+        android:gravity="left|center"
+        android:layout_margin="5dp"
+        android:textStyle="bold"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_divider_color_light"/>-->
+
+    <RelativeLayout
+        android:id="@+id/navigation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/ivBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/double_back"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/permitCount"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/body_font_size"
+            android:textColor="@color/CEO_green"/>
+
+        <ImageView
+            android:id="@+id/ivNext"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/double_next"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/ivNext"
+            android:background="@color/default_divider_color_light"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/type_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/title_type"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="0dp"
+            android:layout_weight="1.25"
+            android:layout_height="wrap_content"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/location_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/title_location"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="0dp"
+            android:layout_weight="1.25"
+            android:layout_height="wrap_content"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/zone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/title_zone"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="wrap_content"
+            android:text="Zone"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+        <TextView
+            android:id="@+id/tv_zone"
+            android:layout_width="0dp"
+            android:layout_weight="1.25"
+            android:layout_height="wrap_content"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/estate_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/title_estate"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="wrap_content"
+            android:text="Estate Zone"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+        <TextView
+            android:id="@+id/tv_estate"
+            android:layout_width="0dp"
+            android:layout_weight="1.25"
+            android:layout_height="wrap_content"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/start_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/title_start_date"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="wrap_content"
+            android:text="Start Date"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+        <TextView
+            android:id="@+id/tv_start_date"
+            android:layout_width="0dp"
+            android:layout_weight="1.25"
+            android:layout_height="wrap_content"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/expiry_date_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/title_expiry_date"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+        <TextView
+            android:id="@+id/tv_expiry_date"
+            android:layout_width="0dp"
+            android:layout_weight="1.25"
+            android:layout_height="wrap_content"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/expiry_time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_margin="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/title_expiry_time"
+            android:layout_width="0dp"
+            android:layout_weight="0.75"
+            android:layout_height="wrap_content"
+            android:text="Expiry Time"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+        <TextView
+            android:id="@+id/tv_expiry_time"
+            android:layout_width="0dp"
+            android:layout_weight="1.25"
+            android:layout_height="wrap_content"
+            style="@style/blackMediumText"
+            android:gravity="left|center" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noValidPermitTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No valid permit or cashless parking session"
+        style="@style/blackMediumText"
+        android:textSize="16sp"
+        android:gravity="left|center"
+        android:layout_margin="5dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Would you like to continue?"
+        style="@style/blackMediumText"
+        android:textSize="16sp"
+        android:gravity="left|center"
+        android:layout_margin="5dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

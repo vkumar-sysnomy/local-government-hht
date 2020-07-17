@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:background="#ffeeeeee">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textDlgHeader"
+        android:layout_gravity="center"
+        android:singleLine="true"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Enter Permit/Badge Details:"
+        android:editable="true"
+        style="@style/dialogHeaderStyle"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dpLayout">
+
+        <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dpExpiry"
+        android:calendarViewShown="false"
+        android:layout_gravity="center_horizontal"
+        android:padding="5dp"
+        android:layout_marginTop="1dp"
+        android:spinnersShown="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp" />
+
+        <FrameLayout
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/dpExpiry"
+            android:layout_alignBottom="@+id/dpExpiry"
+            android:layout_alignLeft="@+id/dpExpiry"
+            android:id="@+id/patchLayout"></FrameLayout>
+
+    </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Disc/Badge Number"
+        android:padding="20dp"
+        android:id="@+id/editNumber"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:id="@+id/layoutOptions"
+        android:layout_margin="5dp"
+        android:layout_marginTop="1dp">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:gravity="center_horizontal"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Disabled Badge"
+                android:id="@+id/radioBadge"
+                android:layout_gravity="left"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parking Permit"
+                android:id="@+id/radioPermit"
+                android:layout_gravity="right"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>

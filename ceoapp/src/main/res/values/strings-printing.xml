@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="connection_type">Connection type</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="usb">USB</string>
+    <string name="list">List</string>
+
+    <string name="address">Address</string>
+
+    <string name="log">Log</string>
+
+    <string name="connect">Connect</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="send_text">Send Text</string>
+    <string name="send_binary">Send Binary</string>
+    <string name="send_data_file">Send Data File</string>
+    <string name="abort">Abort</string>
+    <string name="get_status">Get Status</string>
+    <string name="register_logo">Register Logo</string>
+    <string name="unregister_logo">Unregister Logo</string>
+    <string name="register_style_sheet">Register StyleSheet</string>
+    <string name="unregister_style_sheet">Unregister StyleSheet</string>
+    <string name="reset_printer">Reset Printer</string>
+    <string name="get_printer_response">Get Printer Response</string>
+    <string name="abort_printer">Abort/Exit</string>
+
+    <string name="property">Property</string>
+
+    <string name="dialog_connect_title">Select printer model</string>
+    <string name="dialog_send_text_title">Input text data</string>
+    <string name="dialog_send_binary_title">Input binary data</string>
+    <string name="dialog_register_logo_title">Input register logo id</string>
+    <string name="dialog_unregister_logo_title">Input unregister logo id</string>
+    <string name="dialog_register_style_sheet_title">Input register style sheet number</string>
+    <string name="dialog_unregister_style_sheet_title">Input unregister style sheet number</string>
+    <string name="dialog_get_printer_response_title">Select printer response</string>
+    <string name="dialog_finish_app_title">Excel PCN</string>
+    <string name="dialog_finish_app_message">Cancel printing process?</string>
+
+    <string name="settings">Settings</string>
+
+    <string name="send_timeout">Send timeout</string>
+    <string name="receive_timeout">Receive timeout</string>
+    <string name="international_character">International character</string>
+    <string name="code_page">Code page</string>
+    <string name="secure_connection">Secure connection</string>
+    <string name="insecure_connection">Insecure connection</string>
+    <string name="printer_model">Printer model</string>
+
+    <string name="invalid_value">The invalid value was specified.</string>
+
+    <string name="scan_devices">Scan devices</string>
+    <string name="enabled_bluetooth">Enabled Bluetooth</string>
+    <string name="bluetooth_not_supported">Bluetooth not supported</string>
+    <string name="scanning_devices">Scanning devices...</string>
+
+    <string name="key_send_timeout">key_send_timeout</string>
+    <string name="key_receive_timeout">key_receive_timeout</string>
+    <string name="key_international_character">key_international_character</string>
+    <string name="key_code_page">key_code_page</string>
+    <string name="key_secure_connection">key_secure_connection</string>
+
+    <string name="file_list_select_here">Select here</string>
+    <string name="file_list_dont_get_list">Cannot get list.</string>
+    <string name="file_list_empty">&lt;Empty&gt;</string>
+
+    <string name="utility_attention">Attention</string>
+    <string name="utility_please_download">You can use this function only in a pay version.\nDo you download</string>
+</resources>

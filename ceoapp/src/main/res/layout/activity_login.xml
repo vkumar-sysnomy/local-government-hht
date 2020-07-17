@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.farthestgate.android.ui.admin.LoginActivity"
+    android:gravity="center|bottom"
+    android:paddingRight="20dp"
+    android:paddingTop="20dp"
+    android:paddingLeft="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/lblProgress"
+        android:layout_gravity="left"
+        android:visibility="invisible"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:id="@+id/progressBar"
+        android:layout_marginBottom="1dp"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="PARKING SERVICES"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#1ecf37"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:id="@+id/login_ceo_id_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/login_hint_ceo_id"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_login"
+        android:paddingLeft="10dp" />
+
+    <EditText
+        android:id="@+id/login_ceo_password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/login_hint_ceo_password"
+        android:imeOptions="actionDone"
+        android:password="true"
+        android:singleLine="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/input_login"
+        android:paddingLeft="10dp" />
+    <Spinner
+        android:id="@+id/login_ceo_roles_spn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:background="@drawable/roles_login"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="25dp"
+        android:background="@drawable/login_selector"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:clickable="false">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView"
+            android:layout_centerHorizontal="true"
+            android:clickable="false">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtErrors"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignEnd="@+id/scrollView"
+                android:clickable="false" />
+        </ScrollView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="18dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Version :"
+        android:id="@+id/txtVersion"
+        android:layout_gravity="bottom|left"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="1dp" />
+
+</LinearLayout>

@@ -1,0 +1,379 @@
+﻿[
+  {
+    "contraventionCode":1,
+    "contraventionDescription":"Parked in a restricted street during prescribed hours",
+    "enforcementType" :1,
+    "Suffixes":"aoyz",
+    "chargeRate":1
+  },
+  {
+    "contraventionCode":2,
+    "contraventionDescription":"Parked or loading/unloading in a restricted street where waiting and loading/unloading restrictions are in force",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":"ao"
+  },
+  {
+    "contraventionCode":4,
+    "contraventionDescription":"Parked in a meter bay when penalty time is indicated",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes":"cs"
+  },
+  {
+    "contraventionCode":5,
+    "contraventionDescription":"Parked after the expiry of paid for time",
+    "enforcementType":4,
+    "chargeRate":0,
+    "Suffixes":"psuv1"
+  },
+  {
+    "contraventionCode":6,
+    "contraventionDescription":"Parked without clearly displaying a valid pay & display ticket or voucher",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes":"cipv1"
+  },  
+  {
+    "contraventionCode":11,
+    "contraventionDescription":"Parked without payment of the parking charge",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes":"gu"
+  },
+  {
+    "contraventionCode":12,
+    "contraventionDescription":"Parked in a residents' or shared use parking place without clearly displaying either a permit or voucher or pay and display ticket issued for that place",
+    "enforcementType":2,
+    "chargeRate":1,
+    "Suffixes":"rstuwy4"
+  },
+  {
+    "contraventionCode":14,
+    "contraventionDescription":"Parked in an electric vehicles' charging place during restricted hours without charging",
+    "enforcementType":2,
+    "chargeRate":1,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":16,
+    "contraventionDescription":"Parked in a permit space without displaying a valid permit",
+    "enforcementType":2,
+    "chargeRate":1,
+    "Suffixes":"bdehqstwxyz4"
+  },
+  {
+    "contraventionCode":18,
+    "contraventionDescription":"Using a vehicle in a parking place in connection with the sale or offering or exposing for sale of goods when prohibited",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":"bcdefhmprsv"
+  },
+  {
+    "contraventionCode":19,
+    "contraventionDescription":"Parked in a residents' or shared use parking place or zone displaying an invalid permit or voucher or pay & display ticket, or after the expiry of paid for time",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes":"irsuwxyz4"
+  },
+  {
+    "contraventionCode":20,
+    "contraventionDescription":"Parked in a loading gap marked by a yellow line",
+    "enforcementType":2,
+    "chargeRate":1,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":21,
+    "contraventionDescription":"Parked in a suspended bay/space or part of bay/space",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":"bcdefghlmpqrsuv12"
+  },
+  {
+    "contraventionCode":22,
+    "contraventionDescription":"Re-parked in the same parking place or zone within one hour after leaving",
+    "enforcementType":4,
+    "chargeRate":0,
+    "Suffixes":"cflmnopsv"
+  },
+  {
+    "contraventionCode":23,
+    "contraventionDescription":"Parked in a parking place or area not designated for that class of vehicle",
+    "enforcementType":2,
+    "chargeRate":1,
+    "Suffixes":"bcdefghklprsv123"
+  },
+  {
+    "contraventionCode":24,
+    "contraventionDescription":"Not parked correctly within the markings of the bay or space",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes":"bcdefhlmpqrsv12"
+  },
+  {
+    "contraventionCode":25,
+    "contraventionDescription":"Parked in a loading place during restricted hours without loading",
+    "enforcementType":2,
+    "chargeRate":1,
+       "Suffixes":"n"
+  },
+  {
+    "contraventionCode":26,
+    "contraventionDescription":"Vehicle parked more than 50 centimetres from the edge of the carriageway and not within a designated parking place.",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":27,
+    "contraventionDescription":"Parked adjacent to a dropped footway",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":"o"
+  },
+  {
+    "contraventionCode":28,
+    "contraventionDescription":"Parked in a special enforcement area on part of the carriageway raised to meet the level of a footway, cycle track or verge",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":"o"
+  },
+  {
+    "contraventionCode":30,
+    "contraventionDescription":"Parked for longer than permitted",
+    "enforcementType":4,
+    "chargeRate":0,
+    "Suffixes":"flmnopsu"
+  },
+  {
+    "contraventionCode":35,
+    "contraventionDescription":"Parked in a disc parking place without clearly displaying a valid disc",
+    "enforcementType":0,
+    "chargeRate":0,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":40,
+    "contraventionDescription":"Parked in a designated disabled person's parking place without displaying a valid disabled person's badge.",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":"n"
+  },
+  {
+    "contraventionCode":41,
+    "contraventionDescription":"Parked in a parking place designated for diplomatic vehicles",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":42,
+    "contraventionDescription":"Parked in a parking place designated for police vehicles",
+    "enforcementType":2,
+    "chargeRate":1,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":43,
+    "contraventionDescription":"Stopped on a cycle docking station parking place",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":45,
+    "contraventionDescription":"Parked on a taxi rank",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":"n"
+  },
+  {
+    "contraventionCode":46,
+    "contraventionDescription":"Stopped where prohibited (on a red route or clearway)",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes":"n"
+  },
+  {
+    "contraventionCode":47,
+    "contraventionDescription":"Stopped on a restricted bus stop or stand",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":"n"
+  },
+  {
+    "contraventionCode":48,
+    "contraventionDescription":"Stopped in a restricted area outside a school",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":49,
+    "contraventionDescription":"Parked wholly or partly on a cycle track",
+    "enforcementType":2,
+    "chargeRate":1,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":55,
+    "contraventionDescription":"A commercial vehicle parked in a restricted street in contravention of an overnight waiting ban",
+    "enforcementType":2,
+    "chargeRate":1,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":56,
+    "contraventionDescription":"Parked in contravention of a commercial vehicle waiting restriction",
+    "enforcementType":2,
+    "chargeRate":1,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":57,
+    "contraventionDescription":"Parked in contravention of a coach ban",
+    "enforcementType":2,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":61,
+    "contraventionDescription":"A heavy commercial vehicle wholly or partly parked on a footway, verge or land between two carriageways",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":"124cg"
+  },
+  {
+    "contraventionCode":62,
+    "contraventionDescription":"Parked with one or more wheels on any part of an urban road other than a carriageway (footway parking) ",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":"124cg"
+  },  
+  {
+    "contraventionCode":70,
+    "contraventionDescription":"Parked in a loading area during restricted hours without reasonable excuse",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":71,
+    "contraventionDescription":"Parked in an electric vehicles’ charging place during restricted hours without charging",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes":""
+  },
+  {
+    "contraventionCode":73,
+    "contraventionDescription":"Parked without payment of the parking charge",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes": "u"
+  },
+  {
+    "contraventionCode":74,
+    "contraventionDescription":"Using a vehicle in a parking place in connection with the sale or offering or exposing for sale of goods when prohibited",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes":"prs"
+  },
+  {
+    "contraventionCode":80,
+    "contraventionDescription":"Parked for longer than the maximum period permitted",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes": "u"
+  },
+  {
+    "contraventionCode":81,
+    "contraventionDescription":"Parked in a restricted area in a car park",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes": "o"
+  },
+  {
+    "contraventionCode":82,
+    "contraventionDescription":"Parked after the expiry of paid for time",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes": "puv"
+  },
+  {
+    "contraventionCode":83,
+    "contraventionDescription":"Parked in a car park without clearly displaying a valid pay & display ticket or voucher or parking clock",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes": "puv"
+  },
+  {
+    "contraventionCode":85,
+    "contraventionDescription":"Parked in a permit bay without clearly displaying a valid permit",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes":"btrw"
+  },
+  {
+    "contraventionCode":86,
+    "contraventionDescription":"Not parked correctly within the markings of a bay or space",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes": "prs"
+  },
+  {
+    "contraventionCode":87,
+    "contraventionDescription":"Parked in a designated disabled person’s parking place without displaying a valid disabled person’s badge in the prescribed manner",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes": ""
+  },
+  {
+    "contraventionCode":89,
+    "contraventionDescription":"Vehicle parked exceeds maximum weight or height or length permitted in the area",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes": ""
+  },
+  {
+    "contraventionCode":91,
+    "contraventionDescription":"Parked in a car park or area not designated for that class of vehicle",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes": "cg"
+  },
+  {
+    "contraventionCode":92,
+    "contraventionDescription":"Parked causing an obstruction",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes": "o"
+  },
+  {
+    "contraventionCode":93,
+    "contraventionDescription":"Parked in car park when closed",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes": "o"
+  },
+  {
+    "contraventionCode":95,
+    "contraventionDescription":"Parked in a parking place for a purpose other than the designated purpose for the parking place",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes": ""
+  },
+  {
+    "contraventionCode":96,
+    "contraventionDescription":"Parked with engine running where prohibited",
+    "enforcementType":2,
+    "chargeRate":0,
+    "Suffixes": "c"
+  },
+  {
+    "contraventionCode":99,
+    "contraventionDescription":"Stopped on a pedestrian crossing and/or crossing area marked by zig-zags",
+    "enforcementType":0,
+    "chargeRate":1,
+    "Suffixes":"o"
+  }
+]

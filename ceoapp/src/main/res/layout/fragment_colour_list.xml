@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/content_frame">
+
+<ListView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:id="@+id/list_colours"
+    android:layout_gravity="top"
+    android:dividerHeight="2dp"
+    android:scrollbarStyle="insideOverlay"
+    android:drawSelectorOnTop="true"
+    android:listSelector="@drawable/list_item_selector"
+    android:background="#72000000"
+    android:divider="#42FFFFFF" />
+
+<ProgressBar
+    style="?android:attr/progressBarStyleLarge"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/progressBarList"
+    android:indeterminate="true"
+    android:layout_centerInParent="true" />
+</FrameLayout>

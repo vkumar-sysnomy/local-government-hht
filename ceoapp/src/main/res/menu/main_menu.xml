@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mnuInTransit"
+        android:showAsAction="always|withText"
+        android:icon="@drawable/in_transit"
+        android:title="TRANSIT"/>
+    <item android:id="@+id/mnuNotesOut"
+        android:showAsAction="always|withText"
+        android:icon="@drawable/a_notes"
+        android:title="NOTES"/>
+    <item android:id="@+id/mnuBreak"
+        android:icon="@drawable/a_break"
+        android:showAsAction="always|withText"
+        android:title="BREAK"/>
+    <item android:id="@+id/mnuEndDay"
+        android:showAsAction="always|withText"
+        android:icon="@drawable/a_eod"
+        android:title="EOD"/>
+    <item android:id="@+id/mnuPrinter"
+        android:showAsAction="always|withText"
+        android:icon="@drawable/a_changeprinter"
+        android:title="CHANGE PRINTER"/>
+</menu>

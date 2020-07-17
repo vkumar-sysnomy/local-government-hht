@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="3">
+    <TextView
+        android:id="@+id/textViewVRM"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center|left"
+        android:text="VRM"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/textViewType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:text="TYPE"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/textViewExp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="5dp"
+        android:text="EXP"
+        android:gravity="center|center_vertical"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/imageViewMsg"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_weight="1"
+        android:src="@drawable/icon_message"
+        android:gravity="center|right"
+        android:visibility="invisible"/>
+</LinearLayout>

@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.farthestgate.android"
+    android:versionCode="10"
+    android:versionName="3.0.0">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+
+
+    <application
+        android:name=".CeoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/parking_icon_green"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@android:style/Theme.Holo.Light.DarkActionBar">
+        <uses-library android:name="org.apache.http.legacy"
+            android:required="false"/>
+        <service
+            android:name=".ui.keyboard.SoftKeyboard"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+
+        <!--<intent-filter>
+            <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+        </intent-filter> --><!-- Active Android parameters -->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="Ceoapp.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="78" /> <!-- android:screenOrientation="portrait" -->
+<!--
+        <meta-data
+            android:name="firebase_crashlytics_collection_enabled"
+            android:value="true" />-->
+
+        <activity
+            android:name=".ui.admin.LoginActivity"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.pcn.PCNStartActivity"
+            android:parentActivityName=".ui.pcn.VisualPCNListActivity"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan" /> <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.pcn.PCNLoggingActivity"
+            android:parentActivityName=".ui.admin.StartDayActivity" /> <!-- android:screenOrientation="portrait" -->
+        <activity android:name=".ui.notes.NotesActivity" /> <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.pcn.VisualPCNListActivity"
+            android:label=""
+            android:targetActivity=".YourActualActivity" /> <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.dialogs.vehicle_logging.VehicleMakesActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <service
+            android:name=".ui.components.TimerRingService"
+            android:description="@string/timer_ring_service_desc"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.android.deskclock.TIMER_ALERT" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name=".ui.components.timer.TimerReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="start_timer" />
+                <action android:name="delete_timer" />
+                <action android:name="times_up" />
+                <action android:name="timer_stop" />
+                <action android:name="timer_done" />
+                <action android:name="timer_update" />
+                <action android:name="notif_times_up_stop" />
+                <action android:name="notif_times_up_show" />
+                <action android:name="notif_times_up_cancel" />
+            </intent-filter>
+        </receiver> <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.admin.StartDayActivity"
+            android:label="@string/title_activity_start_day"
+            android:parentActivityName=".ui.admin.LoginActivity">
+            <intent-filter>
+                <action android:name="android.nfc.action.NDEF_DISCOVERED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity> <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.admin.EndOfDayActivity"
+            android:label="End of Day Summary" /> <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@android:style/Theme.Dialog" -->
+        <!-- android:theme="@style/Transparent" -->
+        <activity
+            android:name=".ui.dialogs.LocationPopup"
+            android:excludeFromRecents="true"
+            android:taskAffinity="" /> <!-- android:screenOrientation="portrait" -->
+        <activity android:name=".ui.photo_gallery.GalleryActivity" /> <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.pcn.BreakActivity"
+            android:label="@string/title_activity_break" />
+        <activity
+            android:name=".ui.pcn.CameraActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" />
+        <activity
+            android:name=".ui.photo_gallery.FullScreenViewActivity"
+            android:screenOrientation="landscape" /> <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.notes.NotesListActivity"
+            android:label="@string/title_activity_notes_list" /> <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.notes.TextNoteActivity"
+            android:label="@string/title_activity_text_note" /> <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.admin.SupervisorActivity"
+            android:label="@string/title_activity_supervisor" /> <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.pcn.DefectRecordingActivity"
+            android:label="@string/title_activity_defect_recording" /> <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.pcn.VRMLookupSummaryActivity"
+            android:label="@string/title_activity_vrmlookup_summary"
+            android:parentActivityName=".ui.pcn.VisualPCNListActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.farthestgate.android.ui.pcn.VisualPCNListActivity" />
+        </activity> <!-- android:screenOrientation="portrait" -->
+        <activity
+            android:name=".ui.pcn.VRMLookupDetailActivity"
+            android:label="@string/title_activity_vrmlookup_detail"
+            android:parentActivityName=".ui.pcn.VRMLookupSummaryActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.farthestgate.android.ui.pcn.VRMLookupSummaryActivity" />
+        </activity>
+        <activity
+            android:name=".ui.pcn.MessageViewActivity"
+            android:label="@string/title_activity_message_view" />
+        <activity
+            android:name=".ui.messages.MessagesActivity"
+            android:label="@string/title_activity_message" />
+        <activity
+            android:name="uk.co.farthestgate.anpr.anpr.TakePhoto"
+            android:label="@string/anpr" />
+        <activity
+            android:name="com.imense.anpr.launchPT.LaunchPT"
+            android:label="launchPT"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <service
+            android:name=".ui.components.RemovalPhotoService"
+            android:enabled="true" />
+        <service
+            android:name=".helper.UnsentPCNService"
+            android:exported="false" />
+        <service
+            android:name=".helper.LocationHelperFused"
+            android:enabled="true" />
+        <service
+            android:name=".helper.fused.MyService"
+            android:enabled="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".helper.fused.CodeRedTrackingService"
+            android:enabled="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name=".helper.fused.BackgroundService"/>
+
+    </application>
+
+</manifest>

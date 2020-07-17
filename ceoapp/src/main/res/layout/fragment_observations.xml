@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!-- Modified by Hanson Aboagye 04/2014 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <FrameLayout
+        android:id="@+id/timers_list_page"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_above="@+id/timer_footer">
+        <ListView
+            android:id="@+id/timers_list"
+            android:dividerHeight="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/timer_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:padding="1dp"
+        android:gravity="center_horizontal">
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_observation"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+            android:gravity="center"
+            android:src="@drawable/pcn_selector"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="false"
+            android:background="@android:color/transparent"
+            style="@style/button"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"/>
+        <ImageButton
+            android:id="@+id/btnGalleryView"
+            android:contentDescription="@string/gallery_button_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gallery_selector"
+            style="@style/button"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"/>
+        <ImageButton
+            android:id="@+id/btnAnpr"
+            android:contentDescription="@string/anpr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/anpr_selector"
+            style="@style/button"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"
+            android:visibility="gone"/>
+
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25" >
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnMessages"
+                android:layout_alignParentBottom="false"
+                android:src="@drawable/messages_selector"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/transparent"
+                style="@style/button"
+                android:focusableInTouchMode="false"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/btnMessageCount"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignTop="@id/btnMessages"
+                android:layout_alignRight="@id/btnMessages"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textColor="#FFF"
+                android:background="@drawable/badge_circle"/>
+
+        </RelativeLayout>
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOptionMore"
+            android:layout_alignParentBottom="false"
+            android:src="@drawable/next_selector"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            style="@style/button"
+            android:focusableInTouchMode="false"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/timer_footer_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:visibility="invisible"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:padding="1dp"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOptionLess"
+            android:layout_alignParentBottom="false"
+            android:src="@drawable/back_arrow_selector"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            style="@style/button"
+            android:focusableInTouchMode="false"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"/>
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRecordDefect"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+            android:gravity="center"
+            android:src="@drawable/defect_selector"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="false"
+            android:background="@android:color/transparent"
+            style="@style/button"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"/>
+        <ImageButton
+            android:id="@+id/btnVRMLookup"
+            android:contentDescription="@string/timer_add_timer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/vrm_lookup_selector"
+            style="@style/button"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"/>
+
+        <!--<ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMessages"
+            android:layout_alignParentBottom="false"
+            android:src="@drawable/messages_selector"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            style="@style/button"
+            android:focusableInTouchMode="false"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"/>-->
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOptionSecondMore"
+            android:layout_alignParentBottom="false"
+            android:src="@drawable/next_selector"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            style="@style/button"
+            android:focusableInTouchMode="false"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/timer_footer_last_more"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:visibility="invisible"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:padding="1dp"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnOptionPrevious"
+            android:layout_alignParentBottom="false"
+            android:src="@drawable/back_arrow_selector"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            style="@style/button"
+            android:focusableInTouchMode="false"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"/>
+
+
+        <ImageButton
+            android:id="@+id/btnGalleryView1"
+            android:contentDescription="@string/gallery_button_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gallery_selector"
+            style="@style/button"
+            android:visibility="gone"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:adjustViewBounds="true"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"/>
+
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCodeRed"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentRight="false"
+            android:gravity="center"
+            android:src="@drawable/red_code"
+            android:layout_centerInParent="true"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="false"
+            android:background="@android:color/transparent"
+            style="@style/button"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"/>
+
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnNewLoc"
+            android:layout_alignParentBottom="false"
+            android:src="@drawable/location_selector"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            style="@style/button"
+            android:focusableInTouchMode="false"
+            android:layout_weight="0.25"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

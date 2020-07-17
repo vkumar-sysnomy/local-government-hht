@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string-array name="international_character_list" >
+        <item>USA</item>
+        <item>FRANCE</item>
+        <item>GERMANY</item>
+        <item>ENGLAND</item>
+        <item>DENMARK I</item>
+        <item>SWEDEN</item>
+        <item>ITALY</item>
+        <item>SPAIN</item>
+        <item>JAPAN</item>
+        <item>NORWAY</item>
+        <item>DENMARK II</item>
+        <item>SPAIN II</item>
+        <item>LATIN_AMERICA</item>
+        <item>ARABIA</item>
+    </string-array>
+    <string-array name="international_character_values_list" >
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>17</item>
+    </string-array>
+    <string-array name="code_page_list" >
+        <item>Katakana</item>
+        <item>Code Page 1252</item>
+        <item>Code Page 864</item>
+        <item>Code Page 1250</item>
+        <item>Code Page 1251</item>
+        <item>Code Page 1253</item>
+        <item>Code Page 1254</item>
+    </string-array>
+    <string-array name="code_page_values_list" >
+        <item>1</item>
+        <item>16</item>
+        <item>37</item>
+        <item>45</item>
+        <item>46</item>
+        <item>47</item>
+        <item>48</item>
+    </string-array>
+    <string-array name="printer_model_list" >
+        <item>DPU-S245</item>
+        <item>DPU-S445</item>
+        <item>RP-E10/11</item>
+    </string-array>
+    <string-array name="printer_model_values_list" >
+        <item>284</item>
+        <item>281</item>
+        <item>291</item>
+    </string-array>
+    <string-array name="printer_response_list" >
+        <item>Response request</item>
+        <item>User area</item>
+        <item>Arrange user area</item>
+        <item>NV graphics</item>
+        <item>Key code</item>
+        <item>Battery status</item>
+    </string-array>
+    <string-array name="printer_response_values_list" >
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>-->
+</resources>

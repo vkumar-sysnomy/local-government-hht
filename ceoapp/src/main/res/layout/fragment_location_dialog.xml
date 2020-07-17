@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context="com.farthestgate.android.ui.dialogs.OSLocationDialog">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textDlgHeader"
+        android:layout_gravity="center"
+        android:background="#42000000"
+        android:singleLine="true"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Enter Location:"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/radioGroup"
+        android:gravity="left"
+        android:padding="10dp"
+        >
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Street Number"
+            android:id="@+id/radioStreet"
+            />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lampost / Street Furniture"
+            android:id="@+id/radioLampost"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opposite"
+            android:id="@+id/radioOpposite"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Other"
+            android:id="@+id/radioOther"
+            />
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editLocation"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:hint="Enter O/S number/lampost"/>
+</LinearLayout>

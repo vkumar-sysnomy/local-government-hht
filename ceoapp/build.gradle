@@ -1,0 +1,156 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'com.google.firebase.crashlytics'
+
+/*import java.util.regex.Pattern
+
+task('increaseVersionCode') << {
+    def manifestFile = file("/src/main/AndroidManifest.xml")
+    def pattern = Pattern.compile("versionCode=\"(\\d+)\"")
+    def manifestText = manifestFile.getText()
+    def matcher = pattern.matcher(manifestText)
+    matcher.find()
+    def versionCode = Integer.parseInt(matcher.group(1))//+1*//*;
+    def manifestContent = matcher.replaceAll("versionCode=\"" + ++versionCode + "\"")
+
+    manifestFile.write(manifestContent)
+}
+//
+
+tasks.whenTaskAdded { task ->
+    if (task.name == 'generateReleaseBuildConfig'// || task.name == 'generateDebugBuildConfig'//) {
+        task.dependsOn 'increaseVersionCode'
+    }
+}*/
+
+
+android {
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    useLibrary 'org.apache.http.legacy'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 28
+        multiDexEnabled true
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+    lintOptions {
+        checkReleaseBuilds false
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+        }
+        release {
+            storeFile file('ceoappkey.jks')
+            storePassword 'fathestgate123'
+            keyAlias 'fathestgate'
+            keyPassword 'fathestgate123'
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'config/.'
+    }
+    productFlavors {
+    }
+
+}
+
+dependencies {
+
+    implementation 'androidx.multidex:multidex:2.0.1'
+
+    //implementation files('libs/Pubnub-Android-3.4.jar')
+    implementation files('libs/pubnub-gson-4.29.2-all.jar'){
+        configurations {
+            compile.exclude module:'gson'
+            compile.exclude module:'retrofit'
+            compile.exclude module:'okio'
+            compile.exclude module:'okhttp'
+            compile.exclude module:'logging-interceptor'
+            compile.exclude module:'converter-gson'
+        }
+    }
+    implementation files('libs/SiiAndroidSDK.jar')
+    //implementation files('libs/gson-2.2.4.jar')
+    implementation files('libs/json-20090211.jar')
+
+    //implementation 'org.apache.poi:poi:3.9'
+
+    /*implementation files('libs/poi-scratchpad-3.9-20121203.jar')
+    implementation files('libs/poi-ooxml-3.9-20121203.jar')
+    implementation files('libs/poi-3.9-20121203.jar')*/
+    implementation files('libs/joda-time-2.3.jar')
+    implementation files('libs/ninelibrary.jar')
+    implementation files('libs/crouton-1.8.3.jar')
+    //implementation files('libs/otto-1.3.4.jar')
+    implementation 'com.squareup:otto:1.3.8'
+
+    //implementation files('libs/org.apache.httpcomponents.httpclient_4.2.5.jar')
+    implementation files('libs/droidparts-2.0.5.jar')
+    implementation files('libs/prettytime-3.2.4.Final.jar')
+    implementation files('libs/svg-android.jar')
+    implementation files('libs/commons-net-3.3.jar')
+    implementation files('libs/activeandroid-3.1-beta.jar')
+    implementation files('libs/apache-commons-sanselan.jar')
+
+    /*implementation 'com.android.support:support-v4:19.1.0'
+    implementation 'com.android.support:support-v4:23.4.0'*/
+
+//    configurations {
+//        all*.exclude group: 'com.android.support', module: 'support-v4,support-v13,appcompat-v7,design'
+//    }
+
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    /*implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v13:1.0.0'*/
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation "com.google.android.gms:play-services-location:17.0.0"
+    implementation 'com.jcraft:jsch:0.1.51'
+    implementation group: 'commons-io', name: 'commons-io', version: '2.6'
+
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.google.firebase:firebase-analytics:17.4.3'
+   // Add the Firebase Crashlytics SDK.
+    implementation 'com.google.firebase:firebase-crashlytics:17.0.1'
+    implementation 'com.google.firebase:firebase-config:19.1.4'
+    //implementation 'com.pubnub:pubnub-android:3.7.11'
+    // implementation 'com.michaelpardo:activeandroid:3.1.0-SNAPSHOT'
+
+
+}
+
+apply plugin: 'com.google.gms.google-services'

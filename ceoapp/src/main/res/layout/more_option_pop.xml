@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layMoreOptionPop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <ImageButton
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnVRMLookup"
+        android:src="@drawable/vrm_lookup_selector"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:background="@android:color/transparent"
+        style="@style/button"
+        android:focusableInTouchMode="false"/>
+    <ImageButton
+        android:layout_width="92dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRecordDefect"
+        android:layout_alignParentBottom="false"
+        android:src="@drawable/defect_selector"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        style="@style/button"
+        android:focusableInTouchMode="false"/>
+ </LinearLayout>

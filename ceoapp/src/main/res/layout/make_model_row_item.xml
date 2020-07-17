@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:clickable="false"
+    android:focusable="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:id="@+id/itemLayout"
+    android:background="@drawable/item_layout_selector"
+    android:focusableInTouchMode="false">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/mainLayout"
+        android:layout_weight="9"
+        android:clickable="true"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+
+        <TextView
+            android:id="@+id/drawerListTaxonomyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:clickable="false"
+            android:layout_marginRight="35dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>

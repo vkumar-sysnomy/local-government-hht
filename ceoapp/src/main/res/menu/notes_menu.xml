@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.farthestgate.android.ui.notes.TextNoteActivity" >
+    <item android:id="@+id/mnuSaveNote"
+        android:title="Save Note"
+        android:showAsAction="always" />
+    <item android:id="@+id/mnuClearNote"
+          android:title="Clear Note"
+          android:showAsAction="always" />
+    <item android:id="@+id/mnuExitNote"
+          android:title="Cancel Note"
+          android:showAsAction="always" />
+</menu>

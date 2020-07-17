@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/mnuNotes"
+        android:showAsAction="always"
+        android:title="Notes"/>
+    <item android:id="@+id/mnuPrinter"
+        android:showAsAction="always"
+        android:title="Change Printer"/>
+</menu>
